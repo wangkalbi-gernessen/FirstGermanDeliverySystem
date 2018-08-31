@@ -1,0 +1,54 @@
+body{
+	width:900px;
+	margin-left:auto;
+	margin-right:auto;
+	background-color:#F5C87F;
+}
+
+header{
+	top:0px;
+	left:0px;
+	width:100%;
+	background-color:#85E024;
+	height:50px;
+	position:fixed;
+}
+
+.table1{
+	text-align:center;
+}
+
+img{
+	height:40px;
+	width:60%;
+}
+
+td{
+	width:15%;
+}
+
+a{
+	color:white;
+}
+
+
+.main1{
+	margin-top:80px;
+}
+
+
+h1{
+	text-decoration:underline;
+	text-align:center;
+	font-size:40px;
+}
+
+p{
+	font-size:25px;
+}
+
+.table2{
+	width:100%;
+}
+
+

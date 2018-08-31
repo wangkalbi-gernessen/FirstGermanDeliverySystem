@@ -1,0 +1,88 @@
+body{
+	width:800px;
+	height:1000px;
+	background:linear-gradient(black,red,yellow);
+	margin-left:auto;
+	margin-right:auto;
+}
+
+h1{
+	color:white;
+	text-align:center;
+	font-size:40px;
+	font-family:"Gulim";
+	font-weight:bold;
+}
+
+p{
+	color:white;
+	text-align:center;
+	font-size:30px;
+	font-family:fantasy;
+}
+
+.loginform{
+	height:600px;
+	width:100%;
+	background-color:white;
+	font-size:30px;
+	text-align:center;
+	border:2px black solid;
+}
+
+form{
+	font-weight:bold;
+}
+
+
+h2{
+	text-align:center;
+	font-size:40px;
+	font-family:serif;
+}
+
+span{
+	font-family:"MS Serif; 
+ }
+
+.login{
+	color:white;
+	background-color:#4597F5;
+	font-size:25px;
+	font-family:"Roman";
+	height:45px;
+}
+
+.hobby{
+	color:red;
+	font-size:20px;
+}
+
+.error{
+	color:red;
+	font-size:20px;
+}
+
+.hobbies{
+	color:red;
+	font-size:20px;
+}
+
+input{
+	height:20px;
+	border:2px black solid;
+}
+
+button{
+	color:white;
+	background-color:#85E024;
+	font-size:25px;
+	font-family:"Courier";
+	height:40px;
+	border:2px black dotted;
+}
+
+button a{
+	color:white;
+}
+

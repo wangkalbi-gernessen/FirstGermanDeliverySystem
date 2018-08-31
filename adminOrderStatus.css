@@ -1,0 +1,28 @@
+body{
+	width:600px;
+	margin-left:auto;
+	margin-right:auto;
+	background-color:#F5C87F;
+}
+
+.orderrecord{
+	background-color:white;
+	width:100%;
+	height:350px;
+	border:2px black solid;
+}
+
+
+h1{
+	text-align:center;
+	text-decoration:underline;
+	font-size:40px;
+	font-weight:bold;
+}
+
+p{
+	font-size:20px;
+	font-weight:bold;
+	margin-left:20px;
+	margin-top:30px;
+}
