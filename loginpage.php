@@ -73,7 +73,7 @@ if(isset($_POST["login"])){
 
 		}else{
 
-			echo "<span class='hobby'>Your username or password is error</span>";
+			echo "<span class='hobby'>Your username or password is wrong</span>";
 		}
 		
 		

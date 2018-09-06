@@ -51,14 +51,14 @@ if(isset($_POST["register"])){
 
 	if($result_name->num_rows>0 || $result_email->num_rows>0){
 
-		echo "<p class='error'> You are already registered</p>";
+		echo "<p class='error'>You are already registered.</p>";
 
 	}else{
 
 		$sql = "INSERT INTO userlist (Username, Email, Address, Tel, Password)VALUES ('$name','$email','$address','$tel','$password')";
 
 		if ($conn->query($sql) === TRUE) {
-		    echo "<p class='complete'>Your account has been registered.</p>";
+		    echo "<p class='complete'>Your registration was successful.</p>";
 		    var_dump($Email);
 		    var_dump($Username);
 
