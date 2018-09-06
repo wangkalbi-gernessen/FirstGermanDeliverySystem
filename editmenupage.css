@@ -30,10 +30,10 @@ a{
 }
 
 h1{
-	font-size:30px;
-	text-decoration:underline;
+	font-size:50px;
 	text-align:center;
 	margin-top:80px;
+	font-family:cursive;
 }
 
 .main2{
@@ -41,7 +41,6 @@ h1{
 	display:inline-block;
 	width:100%;
 	text-align:center;
-	height:270px;
 }
 
 .main2-1{
@@ -55,10 +54,21 @@ h1{
 	width:150px;
 }
 
+.main2-1 input{
+	font-size:15px;
+}
+
+
 .main2-2{
 	display:inline-block;
 	width:23%;
 	margin-left:3px;
+	margin-top:20px;
+}
+
+.main2-2 input{
+	height:20px;
+	border:2px dotted black;
 }
 
 .main2-2 p{
@@ -72,6 +82,12 @@ h1{
 	width:23%;
 	margin-left:3px;
 	height:40px;
+	margin-top:20px;
+}
+
+.main2-3 input{
+	height:20px;
+	border:2px dotted black;
 }
 
 .main2-3 p{
@@ -114,10 +130,15 @@ h1{
 	width:150px;
 }
 
+.main3-1 input{
+	font-size:15px;
+}
+
 .main3-2{
 	display:inline-block;
 	width:23%;
 	margin-left:3px;
+	margin-top:20px;
 }
 
 .main3-2 p{
@@ -126,17 +147,28 @@ h1{
 	font-weight:bold;
 }
 
+.main3-2 input{
+	height:20px;
+	border:2px dotted black;
+}
+
 .main3-3{
 	display:inline-block;
 	width:23%;
 	margin-left:3px;
 	height:40px;
+	margin-top:20px;
 }
 
 .main3-3 p{
 	text-align:center;
 	font-size:15px;
 	font-weight:bold;
+}
+
+.main3-3 input{
+	height:20px;
+	border:2px dotted black;
 }
 
 .main3-4{
@@ -159,9 +191,10 @@ h1{
 }
 
 .main4 input{
-	font-size:20px;
+	font-size:30px;
 	background-color:skyblue;
 	color:white;
+	border:2px dotted black;
 }
 
 

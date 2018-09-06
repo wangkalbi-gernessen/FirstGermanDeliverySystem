@@ -11,17 +11,52 @@ body{
 
 .explain h1{
 	text-align:center;
-	text-decoration:underline;
+	font-family:cursive;
+	font-size:40px;
 }
 .explain p{
 	padding-left:20px;	
 	padding-top:20px;
+	font-size:20px;
+	font-family:serif;
+}
+
+.result{
+	border:1px solid black;
+	padding-top:20px;
+	margin-top:20px;
+	background-color:white;
+	padding-left:50px;
+
+}
+
+.image{
+	margin-top:30px;
+}
+
+.image img{
+	height:100px;
+	padding-left:30px;
 }
 
 h2{
-	font-size:15px;
+	font-size:25px;
 }
 
 span{
 	color:red;
+}
+
+.order{
+	text-align:center;
+	margin-bottom:50px;
+}
+
+.order .bestellen{
+	height:50px;
+	width:90px;
+	font-size:30px;
+	background-color:skyblue;
+	color:white;
+	border:1px solid black;
 }

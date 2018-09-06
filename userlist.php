@@ -28,10 +28,10 @@ $result = $conn->query($sql);
 	<div class="main1">
 		<h1>User List</h1>
 		<form action="adminmenupage.php" method="POST">
-			<button type="submit" formaction="adminmenupage.php">Back to HOME</button>
+			<button>Back to HOME</button>
 		</form>
 	</div>
-	<table border="2" class="table2">
+	<table border="1" class="table2">
 	<tr bgcolor="#85E024">
 	<td class="list">ID</td>
 	<td class="list">Username</td>
@@ -45,12 +45,12 @@ $result = $conn->query($sql);
 		while($rows=$result->fetch_assoc()){
 			$id=$rows["ID"];
 			echo "<tr>";
-			echo "<td>".$id."</td>";
-			echo "<td>".$rows["Username"]."</td>";
-			echo "<td>".$rows["Email"]."</td>";
-			echo "<td>".$rows["Address"]."</td>";
-			echo "<td>".$rows["Tel"]."</td>";
-			echo "<td>".$rows["Password"]."</td>";
+			echo "<td class='list2'>".$id."</td>";
+			echo "<td class='list2'>".$rows["Username"]."</td>";
+			echo "<td class='list2'>".$rows["Email"]."</td>";
+			echo "<td class='list2'>".$rows["Address"]."</td>";
+			echo "<td class='list2'>".$rows["Tel"]."</td>";
+			echo "<td class='list2'>".$rows["Password"]."</td>";
 			echo "</tr>";
 		}
 	}else{

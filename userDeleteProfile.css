@@ -33,29 +33,53 @@ a{
 
 h1{
 	font-size:45px;
-	text-decoration:underline;
 	margin-top:80px;
+	text-align:center;
+	font-family:cursive;
+	font-weight:bold;
 }
 
 p{
-	font-size:30px;
+	font-size:20px;
+	font-family:serif;
+	padding-left:30px;
 }
 
 .accord{
 	width:100%;
 	height:300px;
 	background-color:white;
-
+	border:1px solid black;
 }
 
 span{
 	font-weight:bold;
-	font-size:30px;
+	font-size:28px;
+	margin-left:50px;
+}
+
+.username{
+	margin-top:30px;
+}
+
+.username input{
+	height:20px;
 	margin-left:20px;
+	border:1px solid black;
+}
+
+.password{
+	margin-top:30px;
+}
+
+.password input{
+	height:20px;
+	margin-left:25px;
+	border:1px solid black;
 }
 
 .delete{
-	margin-top:30px;
+	margin-top:60px;
 	text-align:center;
 }
 

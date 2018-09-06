@@ -34,28 +34,28 @@
 		<input type="file" name="thuringer">
 		</div>
 		<div class="main2-2">
-		<input type="text" name="schnit" placeholder="Product" required>
+		<input type="text" name="schnit" placeholder="Product" size="25" required>
 		</div>
 		<div class="main2-2">
-		<input type="text" name="nurnberg" placeholder="Product" required>
+		<input type="text" name="nurnberg" placeholder="Product" size="25" required>
 		</div>
 		<div class="main2-2">
-		<input type="text" name="westkreuz" placeholder="Product" required>
+		<input type="text" name="westkreuz" placeholder="Product" size="25" required>
 		</div>
 		<div class="main2-2">
-		<input type="text" name="jena" placeholder="Product" required>
+		<input type="text" name="jena" placeholder="Product" size="25" required>
 		</div>
 		<div class="main2-3">
-		<input type="text" name="cutlet" placeholder="Price" required>
+		<input type="text" name="cutlet" placeholder="Price" size="25" required>
 		</div>
 		<div class="main2-3">
-		<input type="text" name="furth" placeholder="Price" required>
+		<input type="text" name="furth" placeholder="Price" size="25" required>
 		</div>
 		<div class="main2-3">
-		<input type="text" name="sudkreuz" placeholder="Price" required>
+		<input type="text" name="sudkreuz" placeholder="Price" size="25" required>
 		</div>
 		<div class="main2-3">
-		<input type="text" name="weimar" placeholder="Price" required>
+		<input type="text" name="weimar" placeholder="Price" size="25" required>
 		</div>
 	</div>
 	<div class="main3">
@@ -72,28 +72,28 @@
 		<input type="file" name="wien">
 		</div>
 		<div class="main3-2">
-		<input type="text" name="koln" placeholder="Product" required>
+		<input type="text" name="koln" placeholder="Product" size="25" required>
 		</div>
 		<div class="main3-2">
-		<input type="text" name="bayreuth" placeholder="Product" required>
+		<input type="text" name="bayreuth" placeholder="Product" size="25" required>
 		</div>
 		<div class="main3-2">
-		<input type="text" name="mainz" placeholder="Product" required>
+		<input type="text" name="mainz" placeholder="Product" size="25" required>
 		</div>
 		<div class="main3-2">
-		<input type="text" name="donau" placeholder="Product" required>
+		<input type="text" name="donau" placeholder="Product" size="25" required>
 		</div>
 		<div class="main3-3">
-		<input type="text" name="rhein" placeholder="Price" required>
+		<input type="text" name="rhein" placeholder="Price" size="25" required>
 		</div>
 		<div class="main3-3">
-		<input type="text" name="wurzburg" placeholder="Price" required>
+		<input type="text" name="wurzburg" placeholder="Price" size="25" required>
 		</div>
 		<div class="main3-3">
-		<input type="text" name="wiesbaden" placeholder="Price" required>
+		<input type="text" name="wiesbaden" placeholder="Price" size="25" required>
 		</div>
 		<div class="main3-3">
-		<input type="text" name="bratislava" placeholder="Price" required>
+		<input type="text" name="bratislava" placeholder="Price" size="25" required>
 		</div>
 	</div>		
 	<div class="main4">

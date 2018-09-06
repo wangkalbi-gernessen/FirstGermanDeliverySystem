@@ -40,9 +40,9 @@ h1{
 	font-size:30px;
 	text-align:center;
 	margin-top:80px;
-	text-decoration:underline;
-	font-size:40px;
+	font-size:50px;
 	font-weight:bold;
+	font-family:cursive;
 }
 
 .black{
@@ -88,19 +88,43 @@ h1{
 	text-align:center;
 }
 
+.image input{
+	font-size:15px;
+}
+
 
 .product{
 	width:100%;
 	font-size:20px;
 	text-align:center;
+	margin-top:20px;
+}
+
+.product input{
+	height:20px;
+	border:2px dotted black;
 }
 
 .price{
 	width:100%;
 	font-size:20px;
 	text-align:center;
+	margin-top:20px;
+}
+
+.price input{
+	height:20px;
+	border:2px dotted black;
 }
 
 .main4{
 	text-align:center;
+}
+
+.main4 input{
+	font-size:30px;
+	height:40px;
+	background-color:skyblue;
+	color:white;
+	border:2px dotted black;
 }

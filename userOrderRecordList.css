@@ -32,16 +32,29 @@ a{
 }
 
 h1{
-	text-decoration:underline;
+	font-family:cursive;
 	text-align:center;
-	font-size:40px;
+	font-size:50px;
 	margin-top:80px;
 }
 
 p{
-	font-size:25px;
+	font-size:18px;
+	font-family:serif;
+	padding-left:30px;
 }
 
-table{
+.tableSecond{
 	width:100%;
+}
+
+.sub{
+	color:white;
+}
+
+.bild{
+	background-color:skyblue;
+	font-size:20px;
+	color:white;
+	border:1px solid black;
 }

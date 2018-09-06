@@ -48,18 +48,28 @@ $result = $conn->query($sql);
 		   After you edited, please click on "Edition".</p>
 		<div class="editform">
 		<form action="userEditProfile.php" method="POST">
+		<div class="username">	
 		<span>Username:</span>
-		<input type="text" name="username" value="<?php echo $username; ?>" size="20" ><br>
+		<input type="text" name="username" value="<?php echo $username; ?>" size="20" >
+		</div>
+		<div class="email">
 		<span>Email:</span>
-		<input type="text" name="email" value="<?php echo $email; ?>" size="30"><br>
+		<input type="text" name="email" value="<?php echo $email; ?>" size="30">
+		</div>
+		<div class="address">
 		<span>Address:</span>
-		<input type="text" name="address" value="<?php echo $address; ?>" size="35"><br>
+		<input type="text" name="address" value="<?php echo $address; ?>" size="35">
+		</div>
+		<div class="tel">
 		<span>TEL:</span>
-		<input type="text" name="tel" value="<?php echo $tel; ?>" ><br>
+		<input type="text" name="tel" value="<?php echo $tel; ?>" >
+		</div>
+		<div class="password">
 		<span>Password:</span>
-		<input type="password" name="password" value="<?php echo $password; ?>" ><br>
+		<input type="password" name="password" value="<?php echo $password; ?>" >
+		</div>
 		<div class="edition">
-		<input type="submit" name="edit" value="Edition" class="edit">
+		<input type="submit" name="edit" value="Edition">
 		</div>
 		<?php 
 		if(isset($_POST["edit"])){

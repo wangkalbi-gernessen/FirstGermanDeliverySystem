@@ -34,42 +34,67 @@ a{
 h1{
 	font-weight:bold;
 	font-size:50px;
-	text-decoration:underline;
+	font-family:cursive;
 	text-align:center;
 	margin-top:80px;
 }
 
 p{
-	font-size:25px;
+	font-size:20px;
+	font-family:serif;
 }
 
 .editform{
 	border:1px black solid;
 	background-color:white;
 	width:100%;
-	height:400px;
+	padding-top:30px;
+}
+
+.editform input{
+	height:30px;
+	margin-left:20px;
+	font-size:20px;
+}
+
+.username{
+	margin-bottom:30px;
+}
+
+.email{
+	margin-bottom:30px;
+}
+
+.address{
+	margin-bottom:30px;
+}
+
+.tel{
+	margin-bottom:30px;
 }
 
 span{
 	font-size:30px;
 	font-weight:bold;
 	margin-left:20px;
-}
-
-input{
-	font-size:20px;
+	font-family:"Arial";
 }
 
 .edition{
-	margin-top:20px;
+	margin-top:50px;
 	text-align:center;
+	margin-bottom:50px;
 
 }
 
 
-.edit{
+.edition input{
 	background-color:#4597F5;
 	color:white;
+	height:50px;
+	font-size:25px;
+	border:1px solid black;
+	width:100px;
 }
 
 .complete{
@@ -81,6 +106,8 @@ button{
 	font-size:20px;
 	background-color:#E07581;
 	color:white;
+	margin-bottom:50px;
+	height:50px;
 }
 
 .home{

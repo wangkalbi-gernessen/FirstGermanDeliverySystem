@@ -29,10 +29,14 @@ include 'FirstGermanconnect.php';
 	<p>Please enter username and password</p>
 	<div class="accord">
 	<form action="userDeleteProfile.php" method="POST">
+	<div class="username">
 	<span>Username:</span>
-	<input type="text" name="username" required><br>
+	<input type="text" name="username" size="25" required>
+	</div>
+	<div class="password">
 	<span>Password:</span>
-	<input type="password" name="password" required><br>
+	<input type="password" name="password" size="25" required>
+	</div>
 	<div class="delete">
 	<input type="submit" name="deletion" value="deletion" class="deletion">
 	</div>

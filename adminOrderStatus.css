@@ -15,9 +15,9 @@ body{
 
 h1{
 	text-align:center;
-	text-decoration:underline;
 	font-size:40px;
 	font-weight:bold;
+	font-family:cursive;
 }
 
 p{
@@ -25,4 +25,8 @@ p{
 	font-weight:bold;
 	margin-left:20px;
 	margin-top:30px;
+}
+
+button{
+	text-align:center;
 }

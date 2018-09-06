@@ -1,6 +1,5 @@
 body{
 	width:800px;
-	height:1000px;
 	background:linear-gradient(black,red,yellow);
 	margin-left:auto;
 	margin-right:auto;
@@ -10,7 +9,7 @@ h1{
 	color:white;
 	text-align:center;
 	font-size:40px;
-	font-family:"Gulim";
+	font-family:cursive;
 	font-weight:bold;
 }
 
@@ -22,7 +21,6 @@ p{
 }
 
 .loginform{
-	height:600px;
 	width:100%;
 	background-color:white;
 	font-size:30px;
@@ -80,9 +78,7 @@ button{
 	font-family:"Courier";
 	height:40px;
 	border:2px black dotted;
+	margin-bottom:30px;
 }
 
-button a{
-	color:white;
-}
 

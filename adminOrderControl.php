@@ -20,15 +20,22 @@ if($result->num_rows>0){
 	<body>
 	<h1>Order Control</h1>
 	<form action="orderstatusinsert.php" method="POST">
+	<div class="select">
 	<select name="orderstatus">
-	<option></option>
+	<option value="please">Please select</option>
 	<option value="cookingtime">Cooking time</option>
 	<option value="finished">Cooking finished</option>
 	<option value="start">Start to deliver</option>
 	<option value="delivered">Delivered</option>
 	</select><br>
+	</div>
+	<div class="submit">
 	<input type="hidden" name="orderno" value="<?php echo $number; ?>" > 
-	<input type="submit" name="completion" value="completion">
+	<input type="submit" name="completion" value="completion" class="completion">
+	</form>
+	<form action="adminOrderRecordList.php" method="POST">
+	<button>Back to<br> order record list</button>
+	</div>
 	</form>	
 	</body>
 </html>

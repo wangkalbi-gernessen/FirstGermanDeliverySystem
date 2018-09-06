@@ -43,6 +43,7 @@ if(isset($_POST["status"])){
 	<p>Delivered:  <?php echo $delivered; ?></p>
 	<button>
 	<a href="adminOrderRecordList.php">Back to Order List</a>
+	</button>
 	</div>
 	</body>
 </html>

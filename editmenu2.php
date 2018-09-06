@@ -40,10 +40,10 @@ if($result_image->num_rows>0){
 		echo "<input type='file' name='edit$num'>";
 		echo "</div>";
 		echo "<div class='product'>";
-		echo "<input type='text' name='product$num' value='$product' required>";
+		echo "<input type='text' name='product$num' value='$product' size='25' required>";
 		echo "</div>";
 		echo "<div class='price'>";
-		echo "<input type='text' name='price$num' value='$price' required>";
+		echo "<input type='text' name='price$num' value='$price' size='25' required>";
 		echo "</div>";
 		echo "<input type='hidden' name='id$num' value='$id'>";	
 	echo "</div>";
