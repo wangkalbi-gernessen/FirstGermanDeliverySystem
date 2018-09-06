@@ -35,7 +35,7 @@ $result=$conn->query($sql);
 			</table>
 		</header>
 		<div class="main1">
-		<?php echo "<h2>".$_SESSION["username"]."</h2>"; ?> 
+		<?php echo "<h2>Your account name is <span class='account'>".$_SESSION["username"]."</span></h2>"; ?> 
 		<h1>Welcome to <span class="black">First German</span> <span class="red">Delivery</span> <span class="yellow">System</span></h1>
 		<p>These are list of menu.<br>
 		   If you place an order, please click on "order".
@@ -89,14 +89,14 @@ $result=$conn->query($sql);
 		<br>
 		<div class="main4">
 		<input type="submit" name="order" value="order">
-		</div>
 		</form>
+		</div>
 
 		<div class="main5">
 		<h1>Delivery System information of contact</h1>
-		<p><span>Name:</span>  First German Delivery System</p>
-		<p><span>Address:</span>  Ronaldo str. 3-9 Cebu City, Philippine</p>
-		<p><span>TEL:</span>  +63 883 3576</p>
+		<p><strong>Name:</strong>  First German Delivery System</p>
+		<p><strong>Address:</strong>  Ronaldo str. 3-9 Cebu City, Philippine</p>
+		<p><strong>TEL:</strong>  +63 883 3576</p>
 		</div>
 
 		<footer>
