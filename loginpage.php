@@ -1,8 +1,6 @@
 <?php
 session_start();
 include 'FirstGermanconnect.php';
-
-
 ?>
 
 <!DOCTYPE html>
@@ -29,25 +27,23 @@ include 'FirstGermanconnect.php';
 <div class="loginform">
 <h2>Login Page</h2>
 <form action="loginpage.php" method="POST">
-	<span>Username:</span>
-	<input type="text" name="username" size="25"><br><br>
-	<span>Password:</span>
-	<input type="password" name="password" size="25"><br><br>
-	<label><input type="radio" name="user" value="admin">Admin</label><br>
-	<label><input type="radio" name="user" value="user">User<label><br><br>
-	<input type="submit" name="login" value="login" class="login"><br>
+<span>Username:</span>
+<input type="text" name="username" size="25" required><br><br>
+<span>Password:</span>
+<input type="password" name="password" size="25"><br required><br>
+<label><input type="radio" name="guest" value="admin" required>Admin</label><br>
+<label><input type="radio" name="guest" value="user" required=>User<label><br><br>
+<input type="submit" name="login" value="login" class="login"><br>
 
 	
 <?php
-
-
 if(isset($_POST["login"])){
 
 	$Username="";
 	$Password="";
 	$name=$_POST["username"];
 	$word=$_POST["password"];
-	$owner=$_POST["user"];
+	$owner=$_POST["guest"];
 	$_SESSION["username"] = $name;
 
 
@@ -62,46 +58,42 @@ if(isset($_POST["login"])){
 			$_SESSION["id"] = $id;
 		}
 
-		$_SESSION["username"] = $name;
-		header("location:usermenupage.php");
 	}else{
-		echo "";
-	}
 
+		echo "";
+		
+	}
 
 	
+
 	if($owner == "admin"){
-		if($name == "Kazunobu Someya" && $word == "stadt54"){
+		if(($name == "Kazunobu Someya") && ($word == "stadt54")){
 			
 			header("location:adminmenupage.php");
+
 		}else{
+
 			echo "<span class='hobby'>Your username or password is error</span>";
 		}
-	}
-
-
-
-	if($owner == "user"){
-		if(($name == $Username)  &&  ($word == $Password)){
-
-			
-			header("location:usermenupage.php");
-
 		
-		}elseif(($name != $Username) || ($word != $Password)){
+		
+	}elseif($owner == "user"){
+		if(($name == $Username)  &&  ($word == $Password)){
+		
+		 	header("location:usermenupage.php");
+		
+		}else{
 
 			echo "<span class='error'>Your username or password is wrong.</span>";
 
-
-		}elseif(($name == "") || ($word == "")){
-
-			echo "<span class='hobbies'>Please enter your username or password.</span>";
 		}
 	}
 }
 ?>
-	<br>
-	<button formaction="registeruser.php">To Registration</button>
+<br>
+</form>
+<form action="registeruser.php" method="POST">
+<button >To Registration</button>
 </form>
 </div>
 </body>
