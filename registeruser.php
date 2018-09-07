@@ -23,10 +23,10 @@ include 'FirstGermanconnect.php';
 <input type="text" name="email" placeholder="ex)xxx@xxx.com" size="25" required ><br>
 <br>
 <span>Address:</span>
-<input type="text" name="address" placeholder="Address" size="25" required FILTER_VALIDATE_EMAIL><br>
+<input type="text" name="address" placeholder="Address" size="25" required><br>
 <br>
 <span>TEL:</span>
-<input type="tel" name="tel" placeholder="ex)08093835724" size="25" maxlength="20" required><br><br>
+<input type="tel" id="phoneno" name="tel" placeholder="032-XXX-XXXX" size="25" maxlength="20" pattern="\d{3}-\d{3}-\d{4}" required><br><br>
 <span>Password:</span>
 <input type="password" name="password" placeholder="password" size="25" required><br><br>
 <input type="submit" name="register" value="Register" class="register">
