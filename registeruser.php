@@ -18,13 +18,15 @@ include 'FirstGermanconnect.php';
 <br>
 <form action="registeruser.php" method="POST">
 <span>Username:</span>
-<input type="text" name="username" placeholder="Username" size="25" required><br><br>
+<input type="text" name="username" placeholder="ex)Kazunobu Someya" size="25" required><br><br>
 <span>Email:</span>
-<input type="text" name="email" placeholder="Email" size="25" required><br><br>
+<input type="text" name="email" placeholder="ex)xxx@xxx.com" size="25" required ><br>
+<br>
 <span>Address:</span>
-<input type="text" name="address" placeholder="Address" size="25" required><br><br>
+<input type="text" name="address" placeholder="Address" size="25" required FILTER_VALIDATE_EMAIL><br>
+<br>
 <span>TEL:</span>
-<input type="tel" name="tel" placeholder="telephonenumber" size="25" maxlength="20" required><br><br>
+<input type="tel" name="tel" placeholder="ex)08093835724" size="25" maxlength="20" required><br><br>
 <span>Password:</span>
 <input type="password" name="password" placeholder="password" size="25" required><br><br>
 <input type="submit" name="register" value="Register" class="register">
@@ -49,18 +51,22 @@ if(isset($_POST["register"])){
 	$result_email = $conn->query($sql_email);
 
 
+	
+
+
 	if($result_name->num_rows>0 || $result_email->num_rows>0){
 
 		echo "<p class='error'>You are already registered.</p>";
 
 	}else{
 
+
 		$sql = "INSERT INTO userlist (Username, Email, Address, Tel, Password)VALUES ('$name','$email','$address','$tel','$password')";
 
-		if ($conn->query($sql) === TRUE) {
+
+		if($conn->query($sql) === TRUE) {
+
 		    echo "<p class='complete'>Your registration was successful.</p>";
-		    var_dump($Email);
-		    var_dump($Username);
 
 		}else {
 		    echo "Error: " . $sql . "<br>" . $conn->error;
