@@ -31,7 +31,7 @@ $result = $conn->query($sql);
 		<header>
 			<table border="1">
 			<tr>
-			<td><img src="germany-flag-8x5.gif"></td>
+			<td><img src="foodimage/germany-flag-8x5.gif"></td>
 			<form action="userEditProfile.php" method="POST">
 			<td><a href="userEditProfile.php">Edit profile</a></td>
 			</form>
@@ -50,27 +50,28 @@ $result = $conn->query($sql);
 		<form action="userEditProfile.php" method="POST">
 		<div class="username">	
 		<span>Username:</span>
-		<input type="text" name="username" value="<?php echo $username; ?>" size="20" >
+		<input type="text" name="username" value="<?php echo $username; ?>" pattern="[a-zA-Z\s]{2,20}"  minlength="2" maxlength="20" size="25" >
 		</div>
 		<div class="email">
 		<span>Email:</span>
-		<input type="text" name="email" value="<?php echo $email; ?>" size="30">
+		<input type="email" name="email" value="<?php echo $email; ?>" size="25" maxlength="60" required>
 		</div>
 		<div class="address">
 		<span>Address:</span>
-		<input type="text" name="address" value="<?php echo $address; ?>" size="35">
+		<input type="text" name="address" value="<?php echo $address; ?>" minlength="20" maxlength="100" pattern="[a-zA-Z0-9,-\s]{20,100}" title="Please input within 20 to 100 characters." required>
 		</div>
 		<div class="tel">
 		<span>TEL:</span>
-		<input type="text" name="tel" value="<?php echo $tel; ?>" >
+		<input type="tel" id="phoneno" name="tel" placeholder="032-XXXXXXX" size="25" maxlength="20" pattern="\d{3}-\d{3}-\d{4}" required value="<?php echo $tel; ?>" >
 		</div>
 		<div class="password">
 		<span>Password:</span>
-		<input type="password" name="password" value="<?php echo $password; ?>" >
+		<input type="password" name="password" value="<?php echo $password; ?>" size="25" pattern="[a-zA-Z0-9]{5,10}" title="Please input within 5 to 10 small characters." required >
 		</div>
 		<div class="edition">
 		<input type="submit" name="edit" value="Edition">
 		</div>
+		</form>
 		<?php 
 		if(isset($_POST["edit"])){
 
@@ -85,7 +86,9 @@ $result = $conn->query($sql);
 			if($conn->query($sql) === TRUE){
 				echo "<p class='complete'>Your edition was accepted.</p>";
 				echo "<div class='home'>";
-				echo "<button formaction='usermenupage.php'>Back to HOME</button>";
+				echo "<form action='usermenupage.php' method='POST'>";
+				echo "<button>Back to HOME</button>";
+				echo "</form>";
 				echo "</div>";
 			}else{
 				echo "Error: ".$conn->error;

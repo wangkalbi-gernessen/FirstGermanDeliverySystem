@@ -21,7 +21,7 @@ $result=$conn->query($sql);
 	<header>
 		<table border="1">
 		<tr>
-		<td><img src="germany-flag-8x5.gif"></td>
+		<td><img src="foodimage/germany-flag-8x5.gif"></td>
 		<td><a href="editmenupage.php">Insert Menu</a></td>
 		<td><a href="editmenu2.php">Edit Menu</td>
 		<td><a href="userlist.php">User list</a></td>
@@ -51,7 +51,7 @@ $result=$conn->query($sql);
 
 		echo "<div class='main2-2'>";
 			echo "<div class='image'>";
-			echo "<img src='$img'>";
+			echo "<img src='foodimage/$img'>";
 			echo "</div>";
 			echo "<div class='product'>";
 			echo $product;

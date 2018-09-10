@@ -14,7 +14,7 @@ $result_image=$conn->query($sql_image);
 <header>
 	<table border="1">
 	<tr>
-	<td><img src="germany-flag-8x5.gif"></td>
+	<td><img src="foodimage/germany-flag-8x5.gif"></td>
 	<td><a href="editmenupage.php">Insert Menu</a></td>
 	<td><a href="editmenu2.php">Edit Menu</td>
 	<td><a href="userlist.php">User list</a></td>
@@ -35,15 +35,15 @@ if($result_image->num_rows>0){
 	$price=$rows["Price"];
 
 	echo "<div class='main2-2'>";
-		echo "<form action='editmenu2result.php' method='POST'>";
+		echo "<form action='editmenu2result.php' method='POST' enctype='multipart/form-data'>";
 		echo "<div class='image'>";
-		echo "<input type='file' name='edit$num'>";
+		echo "<input type='file' name='edit$num' id='editor$num'>";
 		echo "</div>";
 		echo "<div class='product'>";
 		echo "<input type='text' name='product$num' value='$product' size='25' required>";
 		echo "</div>";
 		echo "<div class='price'>";
-		echo "<input type='text' name='price$num' value='$price' size='25' required>";
+		echo "<input type='text' name='price$num' value='$price' pattern='[1-9][1-9][0-9]' size='25' required>";
 		echo "</div>";
 		echo "<input type='hidden' name='id$num' value='$id'>";	
 	echo "</div>";

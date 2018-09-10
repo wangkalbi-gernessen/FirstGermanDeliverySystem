@@ -1,38 +1,96 @@
 <?php
 include 'FirstGermanconnect.php';
 
+$target_dir = "foodimage/";
+$target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
+$uploadOk = 1;
+$imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
+
 if(isset($_POST["submit"])){
 
 
-	if(!empty($_POST["schnitzel"])){
+		
+	/*if (move_uploaded_file($_FILES['fileToUpload']['tmp_name'], $target_file)) {
+	    echo "File is valid, and was successfully uploaded.";
+	} else {
+	    echo "Possible file upload attack!";
+	}*/
+	
+	if(!empty($_FILES["fileToUpload"])){
 
-		$schnitzel=$_POST["schnitzel"];
+		$check = getimagesize($_FILES["fileToUpload"]["tmp_name"]);
+	    if($check !== false) {
+	        echo "File is an image - " . $check["mime"] . ".";
+	        $uploadOk = 1;
+	    } else {
+	        echo "File is not an image.";
+	        $uploadOk = 0;
+	    }
+
+		    // Check if file already exists
+		if (file_exists($target_file)) {
+		    echo "Sorry, file already exists.";
+		    $uploadOk = 0;
+		}
+
+		if ($_FILES["fileToUpload"]["size"] > 500000) {
+
+		    echo "Sorry, your file is too large.";
+		    $uploadOk = 0;
+
+		}
+
+		if($imageFileType != "jpg" && $imageFileType != "png" && $imageFileType != "jpeg"
+		&& $imageFileType != "gif" ) {
+		    echo "Sorry, only JPG, JPEG, PNG & GIF files are allowed.";
+		    $uploadOk = 0;
+		}
+
+
+		if ($uploadOk == 0) {
+
+		    echo "Sorry, your file was not uploaded.";
+		
+		} else {
+		    if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file)) {
+		        echo "The file ". basename( $_FILES["fileToUpload"]["name"]). " has been uploaded.";
+		    } else {
+		        echo "Sorry, there was an error uploading your file.";
+		    }
+		}
+
+
+
+		$img=$_FILES["fileToUpload"]["name"];
 		$schnit=$_POST["schnit"];
 		$cutlet=$_POST["cutlet"];
 
+
 		$sql_schnitzel = "INSERT INTO image (Img,Product,Price)
-		VALUES ('$schnitzel', '$schnit', '$cutlet')";
+		VALUES ('$img', '$schnit', '$cutlet')";
 
 		if ($conn->query($sql_schnitzel) === TRUE) {
-		    echo "success";
+		
+
+			echo "success";
+		    /*header("location:adminmenupage.php");*/
 		} else {
 		    echo "Error: " . $sql_schnitzel . "<br>" . $conn->error;
 		}
 	}
-
 	
+/*
+	if(!empty($_FILES["nuremberg"])){
 
-	if(!empty($_POST["nuremberg"])){
-
-		$nuremberg=$_POST["nuremberg"];
+		
 		$nurnberg=$_POST["nurnberg"];
 		$furth=$_POST["furth"];
 
 		$sql_nuremberg = "INSERT INTO image (Img,Product,Price)
-		VALUES ('$nuremberg', '$nurnberg', '$furth')";
+		VALUES ('', '$nurnberg', '$furth')";
 
 		if ($conn->query($sql_nuremberg) === TRUE) {
-		    echo "success";
+		    header("location:editmenupage.php");
 		} else {
 		    echo "Error: " . $sql_nuremberg . "<br>" . $conn->error;
 		}
@@ -40,17 +98,17 @@ if(isset($_POST["submit"])){
 
 
 
-	if(!empty($_POST["berlin"])){
+	if(!empty($_FILES["berlin"])){
 
-		$berlin=$_POST["berlin"];
+		
 		$westkreuz=$_POST["westkreuz"];
 		$sudkreuz=$_POST["sudkreuz"];
 
 		$sql_berlin = "INSERT INTO image (Img,Product,Price)
-		VALUES ('$berlin', '$westkreuz', '$sudkreuz')";
+		VALUES ('', '$westkreuz', '$sudkreuz')";
 
 		if ($conn->query($sql_berlin) === TRUE) {
-		    echo "success";
+		    header("location:editmenupage.php");
 		} else {
 		    echo "Error: " . $sql_berlin . "<br>" . $conn->error;
 		}
@@ -59,88 +117,88 @@ if(isset($_POST["submit"])){
 
 
 
-	if(!empty($_POST["thuringer"])){
+	if(!empty($_FILES["thuringer"])){
 
-		$thuringer=$_POST["thuringer"];
+		
 		$jena=$_POST["jena"];
 		$weimar=$_POST["weimar"];
 
 		$sql_thuringer = "INSERT INTO image (Img,Product,Price)
-		VALUES ('$thuringer', '$jena', '$weimar')";
+		VALUES ('', '$jena', '$weimar')";
 
 		if ($conn->query($sql_thuringer) === TRUE) {
-		    echo "success";
+		    header("location:editmenupage.php");
 		} else {
 		    echo "Error: " . $sql_thuringer . "<br>" . $conn->error;
 		}
 	}
 
 
-	if(!empty($_POST["cologne"])){
+	if(!empty($_FILES["cologne"])){
 
-		$cologne=$_POST["cologne"];
+		
 		$koln=$_POST["koln"];
 		$rhein=$_POST["rhein"];
 
 		$sql_cologne = "INSERT INTO image (Img,Product,Price)
-		VALUES ('$cologne', '$koln', '$rhein')";
+		VALUES ('', '$koln', '$rhein')";
 
 		if ($conn->query($sql_cologne) === TRUE) {
-		    echo "success";
+		    header("location:editmenupage.php");
 		} else {
 		    echo "Error: " . $sql_cologne . "<br>" . $conn->error;
 		}
 	}
 
 
-	if(!empty($_POST["bamberg"])){
+	if(!empty($_FILES["bamberg"])){
 
-		$bamberg=$_POST["bamberg"];
+		
 		$bayreuth=$_POST["bayreuth"];
 		$wurzburg=$_POST["wurzburg"];
 
 		$sql_bamberg = "INSERT INTO image (Img,Product,Price)
-		VALUES ('$bamberg', '$bayreuth', '$wurzburg')";
+		VALUES ('', '$bayreuth', '$wurzburg')";
 
 		if ($conn->query($sql_bamberg) === TRUE) {
-		    echo "success";
+		    header("location:editmenupage.php");
 		} else {
 		    echo "Error: " . $sql_bamberg . "<br>" . $conn->error;
 		}
 	}
 
 
-	if(!empty($_POST["frankfurt"])){
+	if(!empty($_FILES["frankfurt"])){
 
-		$frankfurt=$_POST["frankfurt"];
+		
 		$mainz=$_POST["mainz"];
 		$wiesbaden=$_POST["wiesbaden"];
 
 		$sql_frankfurt = "INSERT INTO image (Img,Product,Price)
-		VALUES ('$frankfurt', '$mainz', '$wiesbaden')";
+		VALUES ('', '$mainz', '$wiesbaden')";
 
 		if ($conn->query($sql_frankfurt) === TRUE) {
-		    echo "success";
+		    header("location:editmenupage.php");
 		} else {
 		    echo "Error: " . $sql_frankfurt . "<br>" . $conn->error;
 		}
 	}
 
 
-	if(!empty($_POST["wien"])){
+	if(!empty($_FILES["wien"])){
 
-		$wien=$_POST["wien"];
+		
 		$donau=$_POST["donau"];
 		$bratislava=$_POST["bratislava"];
 
 		$sql_wien= "INSERT INTO image (Img,Product,Price)
-		VALUES ('$wien', '$donau', '$bratislava')";
+		VALUES ('', '$donau', '$bratislava')";
 
 		if ($conn->query($sql_wien) === TRUE) {
-		    echo "success";
+		   header("location:editmenupage.php");
 		} else {
 		    echo "Error: " . $sql_wien . "<br>" . $conn->error;
 		}
-	}
+	}*/
 }
 ?>

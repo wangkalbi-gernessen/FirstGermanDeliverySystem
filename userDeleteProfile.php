@@ -13,7 +13,7 @@ include 'FirstGermanconnect.php';
 	<header>
 	<table border="1">
 	<tr>
-	<td><img src="germany-flag-8x5.gif"></td>
+	<td><img src="foodimage/germany-flag-8x5.gif"></td>
 	<form action="userEditProfile.php" method="POST">
 	<td><a href="userEditProfile.php">Edit profile</a></td>
 	</form>

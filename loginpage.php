@@ -26,7 +26,7 @@ include 'FirstGermanconnect.php';
 <br>
 <div class="loginform">
 <h2>Login Page</h2>
-<form action="loginpage.php" method="POST">
+<form action="loginpage.php" method="GET">
 <span>Username:</span>
 <input type="text" name="username" size="25" required><br><br>
 <span>Password:</span>
@@ -37,13 +37,13 @@ include 'FirstGermanconnect.php';
 
 	
 <?php
-if(isset($_POST["login"])){
+if(isset($_GET["login"])){
 
 	$Username="";
 	$Password="";
-	$name=$_POST["username"];
-	$word=$_POST["password"];
-	$owner=$_POST["guest"];
+	$name=$_GET["username"];
+	$word=$_GET["password"];
+	$owner=$_GET["guest"];
 	$_SESSION["username"] = $name;
 
 

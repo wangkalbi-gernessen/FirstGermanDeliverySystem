@@ -1,6 +1,5 @@
 body{
 	background-color:#F5C87F;
-	
 }
 
 header{
@@ -38,15 +37,14 @@ h1{
 
 .main2{
 	margin-top:50px;
-	display:inline-block;
 	width:100%;
 	text-align:center;
 }
 
 .main2-1{
-	display:inline-block;
 	width:23%;
 	margin-left:3px;
+	text-align:center;
 }
 
 .main2-1 img{
@@ -60,10 +58,10 @@ h1{
 
 
 .main2-2{
-	display:inline-block;
 	width:23%;
 	margin-left:3px;
 	margin-top:20px;
+	text-align:center;
 }
 
 .main2-2 input{
@@ -78,11 +76,11 @@ h1{
 }
 
 .main2-3{
-	display:inline-block;
 	width:23%;
 	margin-left:3px;
 	height:40px;
 	margin-top:20px;
+	text-align:center;
 }
 
 .main2-3 input{
@@ -96,92 +94,6 @@ h1{
 	font-weight:bold;
 }
 
-
-.main2-4{
-	display:inline-block;
-	width:23%;
-	margin-left:3px;
-	height:30px;
-
-}
-
-.main2-4 input{
-	font-size:20px;
-}
-
-
-
-.main3{
-	margin-top:50px;
-	display:inline-block;
-	width:100%;
-	text-align:center;
-	height:200px;
-}
-
-.main3-1{
-	display:inline-block;
-	width:23%;
-	margin-left:3px;
-}
-
-.main3-1 img{
-	height:120px;
-	width:150px;
-}
-
-.main3-1 input{
-	font-size:15px;
-}
-
-.main3-2{
-	display:inline-block;
-	width:23%;
-	margin-left:3px;
-	margin-top:20px;
-}
-
-.main3-2 p{
-	text-align:center;
-	font-size:12px;
-	font-weight:bold;
-}
-
-.main3-2 input{
-	height:20px;
-	border:2px dotted black;
-}
-
-.main3-3{
-	display:inline-block;
-	width:23%;
-	margin-left:3px;
-	height:40px;
-	margin-top:20px;
-}
-
-.main3-3 p{
-	text-align:center;
-	font-size:15px;
-	font-weight:bold;
-}
-
-.main3-3 input{
-	height:20px;
-	border:2px dotted black;
-}
-
-.main3-4{
-	display:inline-block;
-	width:23%;
-	margin-left:3px;
-	height:30px;
-
-}
-
-.main3-4 input{
-	font-size:20px;
-}
 
 .main4{
 	width:100%;

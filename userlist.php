@@ -16,7 +16,7 @@ $result = $conn->query($sql);
 	<header>
 	<table border="1" class="table1">
 	<tr>
-	<td><img src="germany-flag-8x5.gif"></td>
+	<td><img src="foodimage/germany-flag-8x5.gif"></td>
 	<td><a href="editmenupage.php">Insert Menu</a></td>
 	<td><a href="editmenu2.php">Edit Menu</td>
 	<td><a href="userlist.php">User list</a></td>
