@@ -9,23 +9,51 @@ header{
 	background-color:#85E024;
 	height:50px;
 	position:fixed;
+	line-height:20px;
 }
 
-table{
-	text-align:center;
+ul{
+	float:left;
+	width:80%;
+}
+
+li{
+	float:left;
+	list-style:none;
+	padding-left:55px;
+	font-size:25px;
+	vertical-align:baseline;
 }
 
 img{
-	height:40px;
-	width:60%;
-}
-
-td{
-	width:15%;
+	height:50px;
+	width:170px;
+	float:left;
 }
 
 a{
 	color:white;
+	text-decoration:none;
+}
+
+.lions{
+	border-bottom:7px solid navy;
+}
+
+.hawks{
+	 border-bottom:7px solid yellow;
+}
+
+.dragons{
+	border-bottom:7px solid blue;
+}
+
+.giants{
+	border-bottom:7px solid orange;
+}
+
+.carp{
+	border-bottom:7px solid red;
 }
 
 h1{
@@ -35,6 +63,10 @@ h1{
 	font-family:cursive;
 }
 
+form{
+	text-align:center;
+}
+
 .main2{
 	margin-top:50px;
 	width:100%;
@@ -42,7 +74,7 @@ h1{
 }
 
 .main2-1{
-	width:23%;
+	width:100%;
 	margin-left:3px;
 	text-align:center;
 }
@@ -58,7 +90,7 @@ h1{
 
 
 .main2-2{
-	width:23%;
+	width:100%;
 	margin-left:3px;
 	margin-top:20px;
 	text-align:center;
@@ -76,7 +108,7 @@ h1{
 }
 
 .main2-3{
-	width:23%;
+	width:100%;
 	margin-left:3px;
 	height:40px;
 	margin-top:20px;

@@ -12,16 +12,14 @@ $result_image=$conn->query($sql_image);
 </head>
 <body>
 <header>
-	<table border="1">
-	<tr>
-	<td><img src="foodimage/germany-flag-8x5.gif"></td>
-	<td><a href="editmenupage.php">Insert Menu</a></td>
-	<td><a href="editmenu2.php">Edit Menu</td>
-	<td><a href="userlist.php">User list</a></td>
-	<td><a href="adminOrderRecordList.php">Order Record list</a></td>
-	<td><a href="logoutpage.php" onclick="return confirm('Will you log out?');">Logout</a></td>
-	</tr>
-	</table>
+	<img src="foodimage/germany-flag-8x5.gif">
+	<ul>
+	<li><a href="adminmenupage.php" class="lions">Menu Page</a></li>
+	<li><a href="editmenupage.php"  class="hawks">Insert Menu</li>
+	<li><a href="userlist.php"  class="dragons">User list</a></li>
+	<li><a href="adminOrderRecordList.php"  class="giants">Order Record list</a></li>
+	<li><a href="logoutpage.php" onclick="return confirm('Will you log out?');"  class="carp">Logout</a></li>
+	</ul>
 </header>
 <h1>Edit Menu</h1>
 <?php
@@ -43,7 +41,7 @@ if($result_image->num_rows>0){
 		echo "<input type='text' name='product$num' value='$product' size='25' required>";
 		echo "</div>";
 		echo "<div class='price'>";
-		echo "<input type='text' name='price$num' value='$price' pattern='[1-9][1-9][0-9]' size='25' required>";
+		echo "<input type='text' name='price$num' value='$price' pattern='[1-9][0-9][0-9]' size='25' required>";
 		echo "</div>";
 		echo "<input type='hidden' name='id$num' value='$id'>";	
 	echo "</div>";

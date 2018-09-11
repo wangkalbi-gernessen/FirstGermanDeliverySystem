@@ -13,22 +13,51 @@ header{
 	background-color:#85E024;
 	height:50px;
 	position:fixed;
+	line-height:20px;
 }
 
+ul{
+	float:left;
+	width:80%;
+}
 
+li{
+	float:left;
+	list-style:none;
+	padding-left:50px;
+	font-size:25px;
+	vertical-align:baseline;
+}
 
 img{
-	height:40px;
-	width:60%;
-}
-
-td{
-	width:15%;
-	text-align:center;
+	height:50px;
+	width:170px;
+	float:left;
 }
 
 a{
 	color:white;
+	text-decoration:none;
+}
+
+.lions{
+	border-bottom:7px solid navy;
+}
+
+.hawks{
+	 border-bottom:7px solid yellow;
+}
+
+.dragons{
+	border-bottom:7px solid blue;
+}
+
+.giants{
+	border-bottom:7px solid orange;
+}
+
+.carp{
+	border-bottom:7px solid red;
 }
 
 .main1{

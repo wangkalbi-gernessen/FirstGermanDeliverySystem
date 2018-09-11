@@ -12,16 +12,14 @@ $result=$conn->query($sql);
 </head>
 <body>
 <header>
-<table border="1" class="table1">
-<tr>
-<td><img src="germany-flag-8x5.gif"></td>
-<td><a href="editmenupage.php">Insert Menu</a></td>
-<td><a href="editmenu2.php">Edit Menu</td>
-<td><a href="userlist.php">User list</a></td>
-<td><a href="adminOrderRecordList.php">Order Record list</a></td>
-<td><a href="logoutpage.php" onclick="return confirm('Will you log out?');">Logout</a></td>
-</tr>
-</table>
+	<img src="foodimage/germany-flag-8x5.gif">
+	<ul>
+	<li><a href="adminmenupage.php" class="lions">Menu Page</a></li>
+	<li><a href="editmenupage.php"  class="hawks">Insert Menu</li>
+	<li><a href="editmenu2.php"  class="dragons">Edit Menu</a></li>
+	<li><a href="userlist.php"  class="giants">User List</a></li>
+	<li><a href="logoutpage.php" onclick="return confirm('Will you log out?');"  class="carp">Logout</a></li>
+	</ul>
 </header>
 <div class="main1">
 <h1>Order Record List</h1>	

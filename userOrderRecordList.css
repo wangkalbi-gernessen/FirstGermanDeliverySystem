@@ -12,23 +12,49 @@ header{
 	background-color:#85E024;
 	height:50px;
 	position:fixed;
+	line-height:20px;
 }
 
-.tableFirst{
-	text-align:center;
+ul{
+	float:left;
+	width:75%;
+}
+
+li{
+	float:left;
+	list-style:none;
+	padding-left:70px;
+	font-size:25px;
+	vertical-align:baseline;
 }
 
 img{
-	height:40px;
-	width:60%;
+	height:50px;
+	width:170px;
+	float:left;
 }
 
-td{
-	width:15%;
-}
+
 
 a{
 	color:white;
+	text-decoration:none;
+}
+
+.lions{
+	border-bottom:7px solid navy;
+}
+
+.hawks{
+	 border-bottom:7px solid yellow;
+}
+
+.dragons{
+	border-bottom:7px solid blue;
+}
+
+.carp{
+	border-bottom:7px solid red;
 }
 
 h1{

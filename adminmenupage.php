@@ -19,16 +19,14 @@ $result=$conn->query($sql);
 	</head>
 	<body>
 	<header>
-		<table border="1">
-		<tr>
-		<td><img src="foodimage/germany-flag-8x5.gif"></td>
-		<td><a href="editmenupage.php">Insert Menu</a></td>
-		<td><a href="editmenu2.php">Edit Menu</td>
-		<td><a href="userlist.php">User list</a></td>
-		<td><a href="adminOrderRecordList.php">Order Record list</a></td>
-		<td><a href="logoutpage.php" onclick="return confirm('Will you log out?');">Logout</a></td>
-		</tr>
-		</table>
+		<img src="foodimage/germany-flag-8x5.gif">
+		<ul>
+		<li><a href="editmenupage.php" class="lions">Insert Menu</a></li>
+		<li><a href="editmenu2.php"  class="hawks">Edit Menu</li>
+		<li><a href="userlist.php"  class="dragons">User list</a></li>
+		<li><a href="adminOrderRecordList.php"  class="giants">Order Record list</a></li>
+		<li><a href="logoutpage.php" onclick="return confirm('Will you log out?');"  class="carp">Logout</a></li>
+		</ul>
 	</header>
 	<div class="main1">
 	<h1>Welcome to <span class="black">First German</span> <span class="red">Delivery</span> <span class="yellow">System</span></h1>

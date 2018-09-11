@@ -11,19 +11,13 @@ include 'FirstGermanconnect.php';
 	</head>
 	<body>
 	<header>
-	<table border="1">
-	<tr>
-	<td><img src="foodimage/germany-flag-8x5.gif"></td>
-	<form action="userEditProfile.php" method="POST">
-	<td><a href="userEditProfile.php">Edit profile</a></td>
-	</form>
-	<td><a href="userDeleteProfile.php">Delete profile</a></td>
-	<td><a href="userOrderRecordList.php">Order Record list</a></td>
-	<form action="logoutpage.php" method="POST">
-	<td><a href="logoutpage.php" onclick="return confirm('Will you log out?');">Logout</a></td>
-	</form>
-	</tr>
-	</table>
+	<img src="foodimage/germany-flag-8x5.gif">
+	<ul>
+	<li><a href="usermenupage.php" class="lions">Menu Page</a></li>
+	<li><a href="userEditProfile.php"  class="hawks">Edit Profile</li>
+	<li><a href="userOrderRecordList.php"  class="dragons">Order Record List</a></li>
+	<li><a href="logoutpage.php" onclick="return confirm('Will you log out?');"  class="carp">Logout</a></li>
+	</ul>
 	</header>
 	<h1>User account deletion</h1>
 	<p>Please enter username and password</p>

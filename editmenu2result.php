@@ -40,6 +40,23 @@ if(isset($_POST["edit"])){
 		}
 
 
+
+		if ($uploadOk1 == 0) {
+
+		    echo "Sorry, your file was not uploaded.";
+		
+		} else {
+
+		    if (move_uploaded_file($_FILES["edit1"]["tmp_name"], $target_file1)) {
+		        echo "The file ". basename( $_FILES["edit1"]["name"]). " has been uploaded.";
+		    } else {
+		        echo "Sorry, there was an error uploading your file.";
+		    }
+		}
+
+
+
+
 		$edit1=$_FILES["edit1"]["name"];
 		$id1 =$_POST["id1"];
 		$product1=$_POST["product1"];
@@ -48,8 +65,8 @@ if(isset($_POST["edit"])){
 		$sql1="UPDATE image SET Img='$edit1',Product='$product1',Price='$price1' WhERE ID='$id1'";
 		if($conn->query($sql1) === TRUE){
 
-			
-			header("location:adminmenupage.php");
+			echo "success";
+			/*header("location:adminmenupage.php");*/
 
 		}else{
 			echo "error: ".$conn->error;
@@ -96,6 +113,20 @@ if(isset($_POST["edit"])){
 		}
 
 
+		if ($uploadOk2 == 0) {
+
+		    echo "Sorry, your file was not uploaded.";
+		
+		} else {
+
+		    if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file2)) {
+		        echo "The file ". basename( $_FILES["fileToUpload"]["name"]). " has been uploaded.";
+		    } else {
+		        echo "Sorry, there was an error uploading your file.";
+		    }
+		}
+
+
 		$edit2=$_FILES["edit2"]["name"];
 		$id2 =$_POST["id2"];
 		$product2=$_POST["product2"];
@@ -104,8 +135,8 @@ if(isset($_POST["edit"])){
 		$sql2="UPDATE image SET Img='$edit2',Product='$product2',Price='$price2' WhERE ID='$id2'";
 		if($conn->query($sql2) === TRUE){
 
-			
-			header("location:adminmenupage.php");
+			echo "success";
+			/*header("location:adminmenupage.php");*/
 
 		}else{
 			echo "error: ".$conn->error;
@@ -151,6 +182,20 @@ if(isset($_POST["edit"])){
 		}
 
 
+		if ($uploadOk3 == 0) {
+
+		    echo "Sorry, your file was not uploaded.";
+		
+		} else {
+
+		    if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file3)) {
+		        echo "The file ". basename( $_FILES["fileToUpload"]["name"]). " has been uploaded.";
+		    } else {
+		        echo "Sorry, there was an error uploading your file.";
+		    }
+		}
+
+
 		$edit3=$_FILES["edit3"]["name"];
 		$id3 =$_POST["id3"];
 		$product3=$_POST["product3"];
@@ -160,7 +205,8 @@ if(isset($_POST["edit"])){
 		if($conn->query($sql3) === TRUE){
 
 			
-			header("location:adminmenupage.php");
+			echo "success";
+			/*header("location:adminmenupage.php");*/
 
 		}else{
 			echo "error: ".$conn->error;
@@ -209,6 +255,20 @@ if(isset($_POST["edit"])){
 		}
 
 
+		if ($uploadOk4 == 0) {
+
+		    echo "Sorry, your file was not uploaded.";
+		
+		} else {
+
+		    if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file4)) {
+		        echo "The file ". basename( $_FILES["fileToUpload"]["name"]). " has been uploaded.";
+		    } else {
+		        echo "Sorry, there was an error uploading your file.";
+		    }
+		}
+
+
 		$edit4=$_FILES["edit4"]["name"];
 		$id4 =$_POST["id4"];
 		$product4=$_POST["product4"];
@@ -218,7 +278,8 @@ if(isset($_POST["edit"])){
 		if($conn->query($sql4) === TRUE){
 
 			
-			header("location:adminmenupage.php");
+			echo "success";
+			/*header("location:adminmenupage.php");*/
 
 		}else{
 			echo "error: ".$conn->error;
@@ -264,6 +325,20 @@ if(isset($_POST["edit"])){
 		}
 
 
+		if ($uploadOk5 == 0) {
+
+		    echo "Sorry, your file was not uploaded.";
+		
+		} else {
+
+		    if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file5)) {
+		        echo "The file ". basename( $_FILES["fileToUpload"]["name"]). " has been uploaded.";
+		    } else {
+		        echo "Sorry, there was an error uploading your file.";
+		    }
+		}
+
+
 		$edit5=$_FILES["edit5"]["name"];
 		$id5 =$_POST["id5"];
 		$product5=$_POST["product5"];
@@ -273,7 +348,8 @@ if(isset($_POST["edit"])){
 		if($conn->query($sql5) === TRUE){
 
 			
-			header("location:adminmenupage.php");
+			echo "success";
+			/*header("location:adminmenupage.php");*/
 
 		}else{
 			echo "error: ".$conn->error;
@@ -320,6 +396,18 @@ if(isset($_POST["edit"])){
 		    $uploadOk6 = 0;
 		}
 
+		if ($uploadOk6 == 0) {
+
+		    echo "Sorry, your file was not uploaded.";
+		
+		} else {
+
+		    if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file6)) {
+		        echo "The file ". basename( $_FILES["fileToUpload"]["name"]). " has been uploaded.";
+		    } else {
+		        echo "Sorry, there was an error uploading your file.";
+		    }
+		}
 
 		$edit6=$_FILES["edit6"]["name"];
 		$id6 =$_POST["id6"];
@@ -330,7 +418,8 @@ if(isset($_POST["edit"])){
 		if($conn->query($sql6) === TRUE){
 
 			
-			header("location:adminmenupage.php");
+			echo "success";
+			/*header("location:adminmenupage.php");*/
 
 		}else{
 			echo "error: ".$conn->error;
@@ -379,6 +468,20 @@ if(isset($_POST["edit"])){
 		}
 
 
+		if ($uploadOk7 == 0) {
+
+		    echo "Sorry, your file was not uploaded.";
+		
+		} else {
+
+		    if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file7)) {
+		        echo "The file ". basename( $_FILES["fileToUpload"]["name"]). " has been uploaded.";
+		    } else {
+		        echo "Sorry, there was an error uploading your file.";
+		    }
+		}
+
+
 		$edit7=$_FILES["edit7"]["name"];
 		$id7 =$_POST["id7"];
 		$product7=$_POST["product7"];
@@ -388,7 +491,8 @@ if(isset($_POST["edit"])){
 		if($conn->query($sql7) === TRUE){
 
 			
-			header("location:adminmenupage.php");
+			echo "success";
+			/*header("location:adminmenupage.php");*/
 
 		}else{
 			echo "error: ".$conn->error;
@@ -433,6 +537,18 @@ if(isset($_POST["edit"])){
 		    $uploadOk8 = 0;
 		}
 
+		if ($uploadOk8 == 0) {
+
+		    echo "Sorry, your file was not uploaded.";
+		
+		} else {
+
+		    if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file8)) {
+		        echo "The file ". basename( $_FILES["fileToUpload"]["name"]). " has been uploaded.";
+		    } else {
+		        echo "Sorry, there was an error uploading your file.";
+		    }
+		}
 
 		$edit8=$_FILES["edit8"]["name"];
 		$id8 =$_POST["id8"];
@@ -442,8 +558,8 @@ if(isset($_POST["edit"])){
 		$sql8="UPDATE image SET Img='$edit8',Product='$product8',Price='$price8' WhERE ID='$id8'";
 		if($conn->query($sql8) === TRUE){
 
-			
-			header("location:adminmenupage.php");
+			echo "success";			
+			/*header("location:adminmenupage.php");*/
 
 		}else{
 			echo "error: ".$conn->error;

@@ -6,15 +6,10 @@ $target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
 $uploadOk = 1;
 $imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
 
+
 if(isset($_POST["submit"])){
 
-
-		
-	/*if (move_uploaded_file($_FILES['fileToUpload']['tmp_name'], $target_file)) {
-	    echo "File is valid, and was successfully uploaded.";
-	} else {
-	    echo "Possible file upload attack!";
-	}*/
+	echo "hello". $_FILES["fileToUpload"]["tmp_name"] ."<br>" ;
 	
 	if(!empty($_FILES["fileToUpload"])){
 
@@ -33,7 +28,7 @@ if(isset($_POST["submit"])){
 		    $uploadOk = 0;
 		}
 
-		if ($_FILES["fileToUpload"]["size"] > 500000) {
+		if ($_FILES["fileToUpload"]["size"] > 10000000) {
 
 		    echo "Sorry, your file is too large.";
 		    $uploadOk = 0;
@@ -52,6 +47,7 @@ if(isset($_POST["submit"])){
 		    echo "Sorry, your file was not uploaded.";
 		
 		} else {
+
 		    if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file)) {
 		        echo "The file ". basename( $_FILES["fileToUpload"]["name"]). " has been uploaded.";
 		    } else {
@@ -78,127 +74,5 @@ if(isset($_POST["submit"])){
 		    echo "Error: " . $sql_schnitzel . "<br>" . $conn->error;
 		}
 	}
-	
-/*
-	if(!empty($_FILES["nuremberg"])){
-
-		
-		$nurnberg=$_POST["nurnberg"];
-		$furth=$_POST["furth"];
-
-		$sql_nuremberg = "INSERT INTO image (Img,Product,Price)
-		VALUES ('', '$nurnberg', '$furth')";
-
-		if ($conn->query($sql_nuremberg) === TRUE) {
-		    header("location:editmenupage.php");
-		} else {
-		    echo "Error: " . $sql_nuremberg . "<br>" . $conn->error;
-		}
-	}
-
-
-
-	if(!empty($_FILES["berlin"])){
-
-		
-		$westkreuz=$_POST["westkreuz"];
-		$sudkreuz=$_POST["sudkreuz"];
-
-		$sql_berlin = "INSERT INTO image (Img,Product,Price)
-		VALUES ('', '$westkreuz', '$sudkreuz')";
-
-		if ($conn->query($sql_berlin) === TRUE) {
-		    header("location:editmenupage.php");
-		} else {
-		    echo "Error: " . $sql_berlin . "<br>" . $conn->error;
-		}
-	}
-
-
-
-
-	if(!empty($_FILES["thuringer"])){
-
-		
-		$jena=$_POST["jena"];
-		$weimar=$_POST["weimar"];
-
-		$sql_thuringer = "INSERT INTO image (Img,Product,Price)
-		VALUES ('', '$jena', '$weimar')";
-
-		if ($conn->query($sql_thuringer) === TRUE) {
-		    header("location:editmenupage.php");
-		} else {
-		    echo "Error: " . $sql_thuringer . "<br>" . $conn->error;
-		}
-	}
-
-
-	if(!empty($_FILES["cologne"])){
-
-		
-		$koln=$_POST["koln"];
-		$rhein=$_POST["rhein"];
-
-		$sql_cologne = "INSERT INTO image (Img,Product,Price)
-		VALUES ('', '$koln', '$rhein')";
-
-		if ($conn->query($sql_cologne) === TRUE) {
-		    header("location:editmenupage.php");
-		} else {
-		    echo "Error: " . $sql_cologne . "<br>" . $conn->error;
-		}
-	}
-
-
-	if(!empty($_FILES["bamberg"])){
-
-		
-		$bayreuth=$_POST["bayreuth"];
-		$wurzburg=$_POST["wurzburg"];
-
-		$sql_bamberg = "INSERT INTO image (Img,Product,Price)
-		VALUES ('', '$bayreuth', '$wurzburg')";
-
-		if ($conn->query($sql_bamberg) === TRUE) {
-		    header("location:editmenupage.php");
-		} else {
-		    echo "Error: " . $sql_bamberg . "<br>" . $conn->error;
-		}
-	}
-
-
-	if(!empty($_FILES["frankfurt"])){
-
-		
-		$mainz=$_POST["mainz"];
-		$wiesbaden=$_POST["wiesbaden"];
-
-		$sql_frankfurt = "INSERT INTO image (Img,Product,Price)
-		VALUES ('', '$mainz', '$wiesbaden')";
-
-		if ($conn->query($sql_frankfurt) === TRUE) {
-		    header("location:editmenupage.php");
-		} else {
-		    echo "Error: " . $sql_frankfurt . "<br>" . $conn->error;
-		}
-	}
-
-
-	if(!empty($_FILES["wien"])){
-
-		
-		$donau=$_POST["donau"];
-		$bratislava=$_POST["bratislava"];
-
-		$sql_wien= "INSERT INTO image (Img,Product,Price)
-		VALUES ('', '$donau', '$bratislava')";
-
-		if ($conn->query($sql_wien) === TRUE) {
-		   header("location:editmenupage.php");
-		} else {
-		    echo "Error: " . $sql_wien . "<br>" . $conn->error;
-		}
-	}*/
 }
 ?>
