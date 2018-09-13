@@ -9,7 +9,7 @@ $imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
 
 if(isset($_POST["submit"])){
 
-	echo "hello". $_FILES["fileToUpload"]["tmp_name"] ."<br>" ;
+	/*echo "hello". $_FILES["fileToUpload"]["tmp_name"] ."<br>" ;*/
 	
 	if(!empty($_FILES["fileToUpload"])){
 
@@ -67,9 +67,8 @@ if(isset($_POST["submit"])){
 
 		if ($conn->query($sql_schnitzel) === TRUE) {
 		
-
-			echo "success";
-		    /*header("location:adminmenupage.php");*/
+		    header("location:adminmenupage.php");
+		    
 		} else {
 		    echo "Error: " . $sql_schnitzel . "<br>" . $conn->error;
 		}

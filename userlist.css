@@ -2,7 +2,9 @@ body{
 	margin-left:auto;
 	margin-right:auto;
 	background-color:#F5C87F;
-
+	background-image:url("foodimage/DSCN0805.JPG");
+	background-size:cover;
+	background-repeat:no-repeat;
 }
 
 
@@ -72,26 +74,9 @@ h1{
 	font-family:cursive;
 	text-align:center;
 	float:left;
-	width:80%;
+	width:100%;
 	font-size:50px;
 	line-height:40px;
-}
-
-
-form{
-	float:right;
-	width:20%;
-	text-align:center;
-}
-
-form button{
-	background-color:skyblue;
-	height:50px;
-	width:100px;
-	margin-top:15px;
-	border:1px black solid;
-	color:white;
-	font-size:15px;
 }
 
 .table2{

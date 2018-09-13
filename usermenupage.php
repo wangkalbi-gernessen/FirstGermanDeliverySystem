@@ -6,10 +6,7 @@ if($_SESSION["username"]==""){
 }
 $sql="SELECT * FROM userlist";
 $result=$conn->query($sql);
-
-
 ?>
-
 
 <!DOCTYPE html>
 <html lang="en">
@@ -53,7 +50,7 @@ if($result_image->num_rows>0){
 
 	echo "<div class='main2-2'>";
 		echo "<div class='image'>";
-		echo "<img src='$img'>";
+		echo "<img src='foodimage/$img'>";
 		echo "</div>";
 		echo "<input type='hidden' name='image$num' value='$img'>";
 		echo "<div class='product'>";
@@ -66,7 +63,7 @@ if($result_image->num_rows>0){
 		echo "</div>";
 		echo "<input type='hidden' name='price$num' value='$price'>";
 		echo "<div class='option'>";
-		echo "<select name='schnitzel$num'>";
+		echo "<select name='schnitzel$num' required>";
 		echo "<option value='0'></option>";
 		for($x=1;$x<=5;$x++){
 		echo "<option value='$x'>".$x."</option>";
@@ -87,10 +84,12 @@ if($result_image->num_rows>0){
 </div>
 
 <div class="main5">
+<address>
 <h1>Delivery System information of contact</h1>
 <p><strong>Name:</strong>  First German Delivery System</p>
 <p><strong>Address:</strong>  Ronaldo str. 3-9 Cebu City, Philippine</p>
-<p><strong>TEL:</strong>  +63 883 3576</p>
+<p><strong>TEL:</strong>  032-357-2240</p>
+</address>
 </div>
 
 <footer>

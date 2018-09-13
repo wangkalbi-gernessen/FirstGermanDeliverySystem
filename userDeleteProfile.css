@@ -3,7 +3,11 @@ body{
 	width:600px;
 	margin-left:auto;
 	margin-right:auto;
+	background-image:url("foodimage/DSCN1745.JPG");
+	background-repeat:no-repeat;
+	background-size:cover;
 }
+
 
 header{
 	top:0px;
@@ -63,12 +67,14 @@ h1{
 	text-align:center;
 	font-family:cursive;
 	font-weight:bold;
+	color:orange;
 }
 
 p{
 	font-size:20px;
 	font-family:serif;
 	padding-left:30px;
+	color:white;
 }
 
 .accord{

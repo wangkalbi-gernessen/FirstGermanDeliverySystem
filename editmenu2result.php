@@ -2,9 +2,8 @@
 include 'FirstGermanconnect.php';
 if(isset($_POST["edit"])){
 
-	if(!empty($_FILES["edit1"])){
+	if(!empty($_FILES["edit1"]["name"])){
 
-		
 
 		$target_dir1 = "foodimage/";
 		$target_file1 = $target_dir1 . basename($_FILES["edit1"]["name"]);
@@ -27,7 +26,7 @@ if(isset($_POST["edit"])){
 		    $uploadOk1 = 0;
 		}
 
-		if ($_FILES["edit1"]["size"] > 500000) {
+		if ($_FILES["edit1"]["size"] > 20000000) {
 
 		    echo "Sorry, your file is too large.";
 		    $uploadOk1 = 0;
@@ -65,19 +64,21 @@ if(isset($_POST["edit"])){
 		$sql1="UPDATE image SET Img='$edit1',Product='$product1',Price='$price1' WhERE ID='$id1'";
 		if($conn->query($sql1) === TRUE){
 
-			echo "success";
-			/*header("location:adminmenupage.php");*/
+			/*echo "success";*/
+			header("location:adminmenupage.php");
 
 		}else{
 			echo "error: ".$conn->error;
 		}
+
 	}
 
 
 
-	if(!empty($_FILES["edit2"])){
 
-		
+	if(!empty($_FILES["edit2"]["name"])){
+
+		var_dump($_FILES["edit2"]);
 
 		$target_dir2 = "foodimage/";
 		$target_file2 = $target_dir2 . basename($_FILES["edit2"]["name"]);
@@ -88,10 +89,10 @@ if(isset($_POST["edit"])){
 		$check2 = getimagesize($_FILES["edit2"]["tmp_name"]);
 	    if($check2 !== false) {
 	        echo "File is an image - " . $check2["mime"] . ".";
-	        $uploadOk1 = 1;
+	        $uploadOk2 = 1;
 	    } else {
 	        echo "File is not an image.";
-	        $uploadOk1 = 0;
+	        $uploadOk2 = 0;
 	    }
 
 		    // Check if file already exists
@@ -100,7 +101,7 @@ if(isset($_POST["edit"])){
 		    $uploadOk2 = 0;
 		}
 
-		if ($_FILES["edit2"]["size"] > 500000) {
+		if ($_FILES["edit2"]["size"] > 20000000) {
 
 		    echo "Sorry, your file is too large.";
 		    $uploadOk2 = 0;
@@ -119,8 +120,8 @@ if(isset($_POST["edit"])){
 		
 		} else {
 
-		    if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file2)) {
-		        echo "The file ". basename( $_FILES["fileToUpload"]["name"]). " has been uploaded.";
+		    if (move_uploaded_file($_FILES["edit2"]["tmp_name"], $target_file2)) {
+		        echo "The file ". basename( $_FILES["edit2"]["name"]). " has been uploaded.";
 		    } else {
 		        echo "Sorry, there was an error uploading your file.";
 		    }
@@ -135,8 +136,8 @@ if(isset($_POST["edit"])){
 		$sql2="UPDATE image SET Img='$edit2',Product='$product2',Price='$price2' WhERE ID='$id2'";
 		if($conn->query($sql2) === TRUE){
 
-			echo "success";
-			/*header("location:adminmenupage.php");*/
+			/*echo "success";*/
+			header("location:adminmenupage.php");
 
 		}else{
 			echo "error: ".$conn->error;
@@ -144,7 +145,7 @@ if(isset($_POST["edit"])){
 	}
 
 
-	if(!empty($_FILES["edit3"])){
+	if(!empty($_FILES["edit3"]["name"])){
 
 		
 
@@ -169,7 +170,7 @@ if(isset($_POST["edit"])){
 		    $uploadOk3 = 0;
 		}
 
-		if ($_FILES["edit2"]["size"] > 500000) {
+		if ($_FILES["edit3"]["size"] > 20000000) {
 
 		    echo "Sorry, your file is too large.";
 		    $uploadOk3 = 0;
@@ -188,8 +189,8 @@ if(isset($_POST["edit"])){
 		
 		} else {
 
-		    if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file3)) {
-		        echo "The file ". basename( $_FILES["fileToUpload"]["name"]). " has been uploaded.";
+		    if (move_uploaded_file($_FILES["edit3"]["tmp_name"], $target_file3)) {
+		        echo "The file ". basename( $_FILES["edit3"]["name"]). " has been uploaded.";
 		    } else {
 		        echo "Sorry, there was an error uploading your file.";
 		    }
@@ -203,10 +204,9 @@ if(isset($_POST["edit"])){
 
 		$sql3="UPDATE image SET Img='$edit3',Product='$product3',Price='$price3' WhERE ID='$id3'";
 		if($conn->query($sql3) === TRUE){
-
-			
-			echo "success";
-			/*header("location:adminmenupage.php");*/
+		
+			/*echo "success";*/
+			header("location:adminmenupage.php");
 
 		}else{
 			echo "error: ".$conn->error;
@@ -218,7 +218,7 @@ if(isset($_POST["edit"])){
 
 
 
-	if(!empty($_FILES["edit4"])){
+	if(!empty($_FILES["edit4"]["name"])){
 
 
 		$target_dir4 = "foodimage/";
@@ -242,7 +242,7 @@ if(isset($_POST["edit"])){
 		    $uploadOk4 = 0;
 		}
 
-		if ($_FILES["edit4"]["size"] > 500000) {
+		if ($_FILES["edit4"]["size"] > 20000000) {
 
 		    echo "Sorry, your file is too large.";
 		    $uploadOk4 = 0;
@@ -261,8 +261,8 @@ if(isset($_POST["edit"])){
 		
 		} else {
 
-		    if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file4)) {
-		        echo "The file ". basename( $_FILES["fileToUpload"]["name"]). " has been uploaded.";
+		    if (move_uploaded_file($_FILES["edit4"]["tmp_name"], $target_file4)) {
+		        echo "The file ". basename( $_FILES["edit4"]["name"]). " has been uploaded.";
 		    } else {
 		        echo "Sorry, there was an error uploading your file.";
 		    }
@@ -277,9 +277,8 @@ if(isset($_POST["edit"])){
 		$sql4="UPDATE image SET Img='$edit4',Product='$product4',Price='$price4' WhERE ID='$id4'";
 		if($conn->query($sql4) === TRUE){
 
-			
-			echo "success";
-			/*header("location:adminmenupage.php");*/
+			/*echo "success";*/
+			header("location:adminmenupage.php");
 
 		}else{
 			echo "error: ".$conn->error;
@@ -287,7 +286,7 @@ if(isset($_POST["edit"])){
 	}
 
 
-	if(!empty($_FILES["edit5"])){
+	if(!empty($_FILES["edit5"]["name"])){
 
 		
 
@@ -312,7 +311,7 @@ if(isset($_POST["edit"])){
 		    $uploadOk5 = 0;
 		}
 
-		if ($_FILES["edit5"]["size"] > 500000) {
+		if ($_FILES["edit5"]["size"] > 20000000) {
 
 		    echo "Sorry, your file is too large.";
 		    $uploadOk5 = 0;
@@ -331,8 +330,8 @@ if(isset($_POST["edit"])){
 		
 		} else {
 
-		    if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file5)) {
-		        echo "The file ". basename( $_FILES["fileToUpload"]["name"]). " has been uploaded.";
+		    if (move_uploaded_file($_FILES["edit5"]["tmp_name"], $target_file5)) {
+		        echo "The file ". basename( $_FILES["edit5"]["name"]). " has been uploaded.";
 		    } else {
 		        echo "Sorry, there was an error uploading your file.";
 		    }
@@ -347,9 +346,8 @@ if(isset($_POST["edit"])){
 		$sql5="UPDATE image SET Img='$edit5',Product='$product5',Price='$price5' WhERE ID='$id5'";
 		if($conn->query($sql5) === TRUE){
 
-			
-			echo "success";
-			/*header("location:adminmenupage.php");*/
+			/*echo "success";*/
+			header("location:adminmenupage.php");
 
 		}else{
 			echo "error: ".$conn->error;
@@ -359,7 +357,7 @@ if(isset($_POST["edit"])){
 
 
 
-	if(!empty($_FILES["edit6"])){
+	if(!empty($_FILES["edit6"]["name"])){
 
 		
 
@@ -384,7 +382,7 @@ if(isset($_POST["edit"])){
 		    $uploadOk6 = 0;
 		}
 
-		if ($_FILES["edit6"]["size"] > 500000) {
+		if ($_FILES["edit6"]["size"] > 20000000) {
 
 		    echo "Sorry, your file is too large.";
 		    $uploadOk6 = 0;
@@ -402,8 +400,8 @@ if(isset($_POST["edit"])){
 		
 		} else {
 
-		    if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file6)) {
-		        echo "The file ". basename( $_FILES["fileToUpload"]["name"]). " has been uploaded.";
+		    if (move_uploaded_file($_FILES["edit6"]["tmp_name"], $target_file6)) {
+		        echo "The file ". basename( $_FILES["edit6"]["name"]). " has been uploaded.";
 		    } else {
 		        echo "Sorry, there was an error uploading your file.";
 		    }
@@ -417,9 +415,8 @@ if(isset($_POST["edit"])){
 		$sql6="UPDATE image SET Img='$edit6',Product='$product6',Price='$price6' WhERE ID='$id6'";
 		if($conn->query($sql6) === TRUE){
 
-			
-			echo "success";
-			/*header("location:adminmenupage.php");*/
+			/*echo "success";*/
+			header("location:adminmenupage.php");
 
 		}else{
 			echo "error: ".$conn->error;
@@ -430,7 +427,7 @@ if(isset($_POST["edit"])){
 
 
 
-	if(!empty($_FILES["edit7"])){
+	if(!empty($_FILES["edit7"]["name"])){
 
 		
 
@@ -455,7 +452,7 @@ if(isset($_POST["edit"])){
 		    $uploadOk7 = 0;
 		}
 
-		if ($_FILES["edit7"]["size"] > 500000) {
+		if ($_FILES["edit7"]["size"] > 20000000) {
 
 		    echo "Sorry, your file is too large.";
 		    $uploadOk7 = 0;
@@ -474,8 +471,8 @@ if(isset($_POST["edit"])){
 		
 		} else {
 
-		    if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file7)) {
-		        echo "The file ". basename( $_FILES["fileToUpload"]["name"]). " has been uploaded.";
+		    if (move_uploaded_file($_FILES["edit7"]["tmp_name"], $target_file7)) {
+		        echo "The file ". basename( $_FILES["edit7"]["name"]). " has been uploaded.";
 		    } else {
 		        echo "Sorry, there was an error uploading your file.";
 		    }
@@ -490,9 +487,8 @@ if(isset($_POST["edit"])){
 		$sql7="UPDATE image SET Img='$edit7',Product='$product7',Price='$price7' WhERE ID='$id7'";
 		if($conn->query($sql7) === TRUE){
 
-			
-			echo "success";
-			/*header("location:adminmenupage.php");*/
+			/*echo "success";*/
+			header("location:adminmenupage.php");
 
 		}else{
 			echo "error: ".$conn->error;
@@ -500,7 +496,7 @@ if(isset($_POST["edit"])){
 	}
 
 
-	if(!empty($_FILES["edit8"])){
+	if(!empty($_FILES["edit8"]["name"])){
 
 		
 
@@ -525,7 +521,7 @@ if(isset($_POST["edit"])){
 		    $uploadOk8 = 0;
 		}
 
-		if ($_FILES["edit8"]["size"] > 500000) {
+		if ($_FILES["edit8"]["size"] > 20000000) {
 
 		    echo "Sorry, your file is too large.";
 		    $uploadOk8 = 0;
@@ -543,8 +539,8 @@ if(isset($_POST["edit"])){
 		
 		} else {
 
-		    if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file8)) {
-		        echo "The file ". basename( $_FILES["fileToUpload"]["name"]). " has been uploaded.";
+		    if (move_uploaded_file($_FILES["edit8"]["tmp_name"], $target_file8)) {
+		        echo "The file ". basename( $_FILES["edit8"]["name"]). " has been uploaded.";
 		    } else {
 		        echo "Sorry, there was an error uploading your file.";
 		    }
@@ -557,13 +553,17 @@ if(isset($_POST["edit"])){
 
 		$sql8="UPDATE image SET Img='$edit8',Product='$product8',Price='$price8' WhERE ID='$id8'";
 		if($conn->query($sql8) === TRUE){
-
-			echo "success";			
-			/*header("location:adminmenupage.php");*/
+		
+			/*echo "success";*/
+			header("location:adminmenupage.php");
 
 		}else{
 			echo "error: ".$conn->error;
 		}
+
+	}elseif(empty($_FILES["edit1"]["name"]) && empty($_FILES["edit2"]["name"]) && empty($_FILES["edit3"]["name"]) && empty($_FILES["edit4"]["name"]) && empty($_FILES["edit5"]["name"]) && empty($_FILES["edit6"]["name"]) && empty($_FILES["edit7"]["name"]) && empty($_FILES["edit8"]["name"])){
+
+		header("location:editmenu2.php");
 	}
 }	
 ?>

@@ -25,9 +25,6 @@ $result = $conn->query($sql);
 	</header>
 	<div class="main1">
 		<h1>User List</h1>
-		<form action="adminmenupage.php" method="POST">
-			<button>Back to HOME</button>
-		</form>
 	</div>
 	<table border="1" class="table2">
 	<tr bgcolor="#85E024">
@@ -52,7 +49,7 @@ $result = $conn->query($sql);
 			echo "</tr>";
 		}
 	}else{
-		echo "0 results";
+		echo "";
 	}
 	?>
 	</table>

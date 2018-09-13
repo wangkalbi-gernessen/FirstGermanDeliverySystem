@@ -26,7 +26,7 @@ include 'FirstGermanconnect.php';
 <br>
 <div class="loginform">
 <h2>Login Page</h2>
-<form action="loginpage.php" method="GET">
+<form action="loginpage.php" method="POST">
 <span>Username:</span>
 <input type="text" name="username" size="25" required><br><br>
 <span>Password:</span>
@@ -37,15 +37,14 @@ include 'FirstGermanconnect.php';
 
 	
 <?php
-if(isset($_GET["login"])){
+if(isset($_POST["login"])){
 
 	$Username="";
 	$Password="";
-	$name=$_GET["username"];
-	$word=$_GET["password"];
-	$owner=$_GET["guest"];
+	$name=$_POST["username"];
+	$word=$_POST["password"];
+	$owner=$_POST["guest"];
 	$_SESSION["username"] = $name;
-
 
 
 	$sql= "SELECT * FROM userlist WHERE Username='$name' AND Password='$word'";
@@ -58,17 +57,19 @@ if(isset($_GET["login"])){
 			$_SESSION["id"] = $id;
 		}
 
+		
+
 	}else{
 
 		echo "";
 		
 	}
-
 	
-
+  
 	if($owner == "admin"){
 		if(($name == "Kazunobu Someya") && ($word == "stadt54")){
 			
+		
 			header("location:adminmenupage.php");
 
 		}else{
@@ -78,8 +79,9 @@ if(isset($_GET["login"])){
 		
 		
 	}elseif($owner == "user"){
-		if(($name == $Username)  &&  ($word == $Password)){
 		
+		if(($name == $Username)  &&  ($word == $Password)){
+
 		 	header("location:usermenupage.php");
 		
 		}else{

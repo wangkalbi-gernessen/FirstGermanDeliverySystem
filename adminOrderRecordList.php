@@ -61,7 +61,7 @@ if($result->num_rows>0){
 		echo "</form>";			
 	}
 }else{
-	echo "0 results";
+	
 }
 ?>
 </table>

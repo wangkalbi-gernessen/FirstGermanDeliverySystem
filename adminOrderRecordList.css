@@ -2,6 +2,9 @@ body{
 	margin-left:auto;
 	margin-right:auto;
 	background-color:#F5C87F;
+	background-image:url("foodimage/DSCN3416.JPG");
+	background-size:cover;
+	background-repeat:no-repeat;
 }
 
 header{
@@ -61,24 +64,21 @@ a{
 
 .main1{
 	margin-top:80px;
-	background-color:white;
-	border:2px dotted black;
-}
-
-.main1-2{
-	background-color:white;
 }
 
 
 h1{
 	font-family:cursive;
 	text-align:center;
-	font-size:40px;
+	font-size:50px;
+	color:red;
 }
 
 p{
 	font-size:18px;
 	font-family:serif;
+	padding-left:30px;
+	color:orange;
 }
 
 .table2{

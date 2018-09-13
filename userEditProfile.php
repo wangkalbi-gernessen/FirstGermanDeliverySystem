@@ -44,7 +44,7 @@ $result = $conn->query($sql);
 <form action="userEditProfile.php" method="POST">
 <div class="username">	
 <span>Username:</span>
-<input type="text" name="username" value="<?php echo $username; ?>" pattern="[a-zA-Z\s]{2,20}"  minlength="2" maxlength="20" size="25" >
+<input type="text" name="username" value="<?php echo $username; ?>" pattern="[a-zA-Z\s]{2,20}"  minlength="2" maxlength="20" size="25" required>
 </div>
 <div class="email">
 <span>Email:</span>
@@ -78,12 +78,14 @@ if(isset($_POST["edit"])){
 
 	$sql = "UPDATE userlist SET Username='$name',Email='$mail',Address='$add',Tel='$tele',Password='$pass' WHERE ID='$id'";
 	if($conn->query($sql) === TRUE){
-		echo "<p class='complete'>Your edition was accepted.</p>";
+		
+		header("location:userEditProfile.php");
+		/*echo "<p class='complete'>Your edition was accepted.</p>";
 		echo "<div class='home'>";
 		echo "<form action='usermenupage.php' method='POST'>";
 		echo "<button>Back to HOME</button>";
 		echo "</form>";
-		echo "</div>";
+		echo "</div>";*/
 	}else{
 		echo "Error: ".$conn->error;
 	}

@@ -1,8 +1,11 @@
 body{
 	background-color:#F5C87F;
-	width:600px;
 	margin-left:auto;
 	margin-right:auto;
+	width:600PX;
+	background-image:url("foodimage/DSCN4242.JPG");
+	background-size:cover;
+	background-repeat: no-repeat;
 }
 
 header{

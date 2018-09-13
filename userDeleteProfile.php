@@ -68,9 +68,13 @@ if(isset($_POST["deletion"])){
 		$sql="DELETE FROM userlist WHERE ID='$id'";
 
 		if($conn->query($sql) === TRUE){
-			echo "<p class='complete'>delete ok<br>";
-			echo "Please close this screen</p>";
+			
+
+			header("location:loginpage.php");
+			/*echo "<p class='complete'>delete ok<br>";
+			echo "Please close this screen</p>";*/
 		}else{
+			
 			echo "<p class='error'>Your username or password is wrong.</p>".$conn->error;
 		}
 

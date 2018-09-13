@@ -1,5 +1,10 @@
 body{
 	background-color:#F5C87F;
+	margin-right:auto;
+	margin-right:auto;
+	background-image:url("foodimage/DSCN0754.JPG");
+	background-repeat:no-repeat;
+	background-size:cover;
 }
 
 header{
@@ -27,7 +32,7 @@ li{
 
 img{
 	height:50px;
-	width:170px;
+	width:160px;
 	float:left;
 }
 
@@ -67,9 +72,10 @@ a{
 }
 
 h1{
-	font-size:35px;
+	font-size:40px;
 	font-weight:bold;
 	font-family:cursive;
+	color:white;
 }
 
 .black{
@@ -90,6 +96,7 @@ h1{
 	padding-left:30px;
 	font-family:serif;
 	margin-top:10px;
+	color:white;
 }
 
 .main2{
@@ -99,7 +106,7 @@ h1{
 .main2-2{
 	display:inline-block;
 	width:20%;
-	margin-top:100px;
+	margin-top:90px;
 	height:300px;
 	text-align:center;
 	padding-left:50px;
@@ -114,24 +121,28 @@ h1{
 .image img{
 	height:150px;
 	width:200px;
+	padding-left:20px;
+	padding-top:20px;
 }
 
 .product{
 	width:100%;
 	font-size:20px;
 	text-align:center;
-	margin-top:10px;
-	font-family:"Impact";
+	margin-top:30px;
+	font-family:"Franklin Gothic Medium";
 	display:inline-block;
+	color:white;
 }
 
 .price{
 	width:100%;
 	font-size:20px;
 	text-align:center;
-	margin-top:10px;
-	font-family:"Impact";
+	margin-top:30px;
+	font-family:"Franklin Gothic Medium";
 	display:inline-block;
+	color:white;
 }
 
 

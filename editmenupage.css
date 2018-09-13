@@ -1,5 +1,10 @@
 body{
 	background-color:#F5C87F;
+	margin-left:auto;
+	margin-right:auto;
+	background-image:url("foodimage/DSCN1679.JPG");
+	background-repeat:no-repeat;
+	background-size:cover;
 }
 
 header{
