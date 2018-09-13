@@ -20,7 +20,10 @@
 	<form action="editmenuinsert.php" method="POST" enctype="multipart/form-data">
 	<div class="main2">
 		<div class="main2-1">
+		<label for="file_photo">
+    	＋写真を選択
 		<input type="file" name="fileToUpload" id="inputfile" required>
+		</label>
 		</div>
 		<div class="main2-2">
 		<input type="text" name="schnit" placeholder="Product" size="25" required>

@@ -28,22 +28,24 @@ if(isset($_POST["status"])){
 
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<title>Admin Order Status</title>
-		<link rel="stylesheet" href="adminOrderStatus.css">
-	</head>
-	<body>
-	<h1>Order Status</h1>
-	<div class="orderrecord">
+<head>
+	<meta charset="utf-8">
+	<title>Admin Order Status</title>
+	<link rel="stylesheet" href="adminOrderStatus.css">
+</head>
+<body>
+<h1>Order Status</h1>
+<div class="orderrecord">
 	<p>Cooking time:  <?php echo $start; ?></p>
 	<p></p>
 	<p>Cooking finished:  <?php  echo $finish; ?></p>
 	<p>Start to deliver:  <?php echo $deliver; ?></p>
 	<p>Delivered:  <?php echo $delivered; ?></p>
+	<div class="kiste">
 	<button>
 	<a href="adminOrderRecordList.php">Back to Order List</a>
 	</button>
 	</div>
-	</body>
+</div>
+</body>
 </html>

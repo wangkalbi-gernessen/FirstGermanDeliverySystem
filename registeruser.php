@@ -23,7 +23,7 @@ include 'FirstGermanconnect.php';
 <input type="email" name="email" placeholder="ex)xxx@xxx.xxx" size="25" maxlength="60" required ><br>
 <br>
 <span>Address:</span>
-<input type="text" name="address" placeholder="Address" size="25" minlength="20" maxlength="100" pattern="[a-zA-Z0-9,-\s]{20,100}" title="Please input within 20 to 100 characters." required><br>
+<input type="text" name="address" placeholder="Address" size="25" minlength="20" maxlength="100" pattern="[a-zA-Z0-9,.-\s]{20,100}" title="Please input within 20 to 100 characters." required><br>
 <br>
 <span>TEL:</span>
 <input type="tel" id="phoneno" name="tel" placeholder="032-XXXXXXX" size="25" maxlength="20" pattern="\d{3}-\d{3}-\d{4}" required><br><br>

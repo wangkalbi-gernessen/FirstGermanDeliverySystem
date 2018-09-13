@@ -255,11 +255,6 @@ $order=$_POST["order"];
 	echo "<br>";
 	?>
 	</div>
-
-
-
-
-
 	<?php
 	$id=$_SESSION["id"];
 
@@ -341,8 +336,6 @@ $order=$_POST["order"];
 		$orderdata8 ="";
 		}
 	?>
-	<br>
-	<br>
 	<input type ="hidden" name="orderdata" value="<?php echo $orderdata; ?>" >
 	<input type="hidden" name="orderdata1" value="<?php echo $orderdata1; ?>" >
 	<input type="hidden" name="orderdata2" value="<?php echo $orderdata2; ?>" > 

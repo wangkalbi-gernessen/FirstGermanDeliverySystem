@@ -19,10 +19,10 @@ if($result->num_rows>0){
 	</head>
 	<body>
 	<h1>Order Control</h1>
+	<p>Please select</p>
 	<form action="orderstatusinsert.php" method="POST">
 	<div class="select">
-	<select name="orderstatus">
-	<option value="please">Please select</option>
+	<select name="orderstatus" required=>
 	<option value="cookingtime">Cooking time</option>
 	<option value="finished">Cooking finished</option>
 	<option value="start">Start to deliver</option>

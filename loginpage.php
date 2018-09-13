@@ -84,10 +84,11 @@ if(isset($_POST["login"])){
 
 		 	header("location:usermenupage.php");
 		
+			# code...
 		}else{
 
 			echo "<span class='error'>Your username or password is wrong.</span>";
-
+			
 		}
 	}
 }
