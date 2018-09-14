@@ -3,6 +3,9 @@ body{
 	margin-left:auto;
 	margin-right:auto;
 	width:400px;
+	background-image:url("foodimage/DSCN2817.JPG");
+	background-size:cover;
+	background-repeat:no-repeat;
 }
 
 h1{

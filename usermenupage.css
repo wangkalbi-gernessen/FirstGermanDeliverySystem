@@ -5,6 +5,7 @@ body{
 	background-image:url("foodimage/DSCN1498.JPG");
 	background-repeat:no-repeat;
 	background-size:cover;
+	width:1200px;
 }
 
 header{
@@ -14,20 +15,21 @@ header{
 	background-color:#85E024;
 	height:50px;
 	position:fixed;
-	line-height:20px;
+	line-height:15px;
 }
 
 ul{
 	float:left;
-	width:75%;
+	width:82%;
 }
 
 li{
 	float:left;
 	list-style:none;
-	padding-left:70px;
-	font-size:25px;
-	vertical-align:baseline;
+	margin-left:52px;
+	font-size:21px;
+	text-align:center;
+	width:19%;
 }
 
 img{
@@ -108,13 +110,12 @@ a{
 
 .main2{
 	width:100%;
-	border-bottom:1px solid black;
 }
 
 .main2-2{
 	display:inline-block;
 	width:20%;
-	margin-top:80px;
+	margin-top:90px;
 	height:300px;
 	text-align:center;
 	padding-left:50px;
@@ -124,7 +125,6 @@ a{
 	width:100%
 	height:100px;
 	text-align:center;
-	margin-bottom:20px;
 }
 
 .image img{
@@ -132,24 +132,25 @@ a{
 	width:200px;
 	padding-left:20px;
 	padding-top:20px;
-	margin-bottom:30px;
 }
 
 .product{
 	width:100%;
-	font-size:25px;
+	font-size:20px;
 	text-align:center;
-	margin-top:20px;
+	margin-top:30px;
 	font-family:"Franklin Gothic Medium";
+	display:inline-block;
 	color:white;
 }
 
 .price{
 	width:100%;
-	font-size:25px;
+	font-size:20px;
 	text-align:center;
-	margin-top:20px;
+	margin-top:30px;
 	font-family:"Franklin Gothic Medium";
+	display:inline-block;
 	color:white;
 }
 
@@ -157,7 +158,7 @@ a{
 	width:100%;
 	font-size:20px;
 	text-align:center;
-	margin-top:20px;
+	margin-top:30px;
 
 }
 
@@ -188,6 +189,7 @@ a{
 	margin-top:100px;
 	margin-bottom:40px;
 	color:white;
+	width:100%;
 }
 
 .main5 h1{

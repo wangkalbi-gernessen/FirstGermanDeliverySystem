@@ -130,8 +130,8 @@ if(isset($_POST["complete"])){
 	}
 }	
 ?>
-<form action="usermenupage.php" method="POST">
-<button>Back to<br> Menu Page</button>
+<form action="userOrderRecordList.php" method="POST">
+<button>To order<br>record list</button>
 </form>
 </div>
 </body>
