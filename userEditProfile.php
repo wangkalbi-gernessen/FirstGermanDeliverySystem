@@ -44,19 +44,19 @@ $result = $conn->query($sql);
 <form action="userEditProfile.php" method="POST">
 <div class="username">	
 <span>Username:</span>
-<input type="text" name="username" value="<?php echo $username; ?>" pattern="[a-zA-Z\s]{2,20}"  minlength="2" maxlength="20" size="25" required>
+<input type="text" name="username" value="<?php echo $username; ?>" pattern="[a-zA-Z\s]{2,20}"  minlength="2" maxlength="20" title="Please input within 2 to 20 characters."  size="25" required>
 </div>
 <div class="email">
 <span>Email:</span>
-<input type="email" name="email" value="<?php echo $email; ?>" size="25" maxlength="60" required>
+<input type="email" name="email" value="<?php echo $email; ?>" size="25" maxlength="60" pattern="[^\x22\x27]*" required>
 </div>
 <div class="address">
 <span>Address:</span>
-<input type="text" name="address" value="<?php echo $address; ?>" minlength="20" maxlength="100" pattern="[a-zA-Z0-9,-\s]{20,100}" title="Please input within 20 to 100 characters." required>
+<input type="text" name="address" value="<?php echo $address; ?>" minlength="20" maxlength="100" size="25" pattern="[a-zA-Z0-9,-\s]{20,100}" title="Please input within 20 to 100 characters." required>
 </div>
 <div class="tel">
 <span>TEL:</span>
-<input type="tel" id="phoneno" name="tel" placeholder="032-XXXXXXX" size="25" maxlength="20" pattern="\d{3}-\d{3}-\d{4}" required value="<?php echo $tel; ?>" >
+<input type="tel" id="phoneno" name="tel" placeholder="032-XXX-XXXX" size="25" maxlength="10" pattern="\d{3}-\d{3}-\d{4}" required value="<?php echo $tel; ?>" >
 </div>
 <div class="password">
 <span>Password:</span>

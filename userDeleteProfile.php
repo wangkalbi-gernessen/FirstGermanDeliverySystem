@@ -79,7 +79,7 @@ if(isset($_POST["deletion"])){
 		}
 
 	}else{
-		echo "Your username or password is wrong.";
+		echo "<p class='error'>Your username or password is wrong.</p>";
 	}
 }
 ?>

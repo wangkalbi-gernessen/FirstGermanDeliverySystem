@@ -18,15 +18,15 @@ include 'FirstGermanconnect.php';
 <br>
 <form action="registeruser.php" method="POST">
 <span>Username:</span>
-<input type="text" name="username" placeholder="ex)Kazunobu Someya" pattern="[a-zA-Z\s]{2,20}"  title="Please input within 2 to 20 characters." size="25" required><br><br>
+<input type="text" name="username" placeholder="ex)Kazunobu Someya" pattern="[a-zA-Z\s]{2,20}"  title="Please input within 2 to 20 characters." size="25" minlength="2" maxlength="20" required><br><br>
 <span>Email:</span>
 <input type="email" name="email" placeholder="ex)xxx@xxx.xxx" pattern="[^\x22\x27]*" size="25" maxlength="60" required ><br>
 <br>
 <span>Address:</span>
-<input type="text" name="address" placeholder="Please don't input Japanese." size="25" pattern="[a-zA-Z0-9,-\s]{20,100}" title="Please input within 20 to 100 characters." required><br>
+<input type="text" name="address" placeholder="Please don't input Japanese." size="25" pattern="[a-zA-Z0-9,-\s]{20,100}" minlength="20" maxlength="100" title="Please input within 20 to 100 characters." required><br>
 <br>
 <span>TEL:</span>
-<input type="tel" id="phoneno" name="tel" placeholder="032-XXXXXXX" size="25" maxlength="20" pattern="\d{3}-\d{3}-\d{4}" required><br><br>
+<input type="tel" id="phoneno" name="tel" placeholder="032-XXX-XXXX" size="25" maxlength="10" pattern="\d{3}-\d{3}-\d{4}" required><br><br>
 <span>Password:</span>
 <input type="password" name="password" placeholder="password" size="25" pattern="[a-zA-Z0-9]{5,10}" title="Please input within 5 to 10 small characters." required><br><br>
 <input type="submit" name="register" value="Register" class="register">
