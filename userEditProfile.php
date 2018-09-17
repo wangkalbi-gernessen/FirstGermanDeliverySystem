@@ -56,7 +56,7 @@ $result = $conn->query($sql);
 </div>
 <div class="tel">
 <span>TEL:</span>
-<input type="tel" id="phoneno" name="tel" placeholder="032-XXX-XXXX" size="25" maxlength="10" pattern="\d{3}-\d{3}-\d{4}" required value="<?php echo $tel; ?>" >
+<input type="tel" id="phoneno" name="tel" placeholder="032-XXX-XXXX" size="25" pattern="\d{3}-\d{3}-\d{4}" required value="<?php echo $tel; ?>" >
 </div>
 <div class="password">
 <span>Password:</span>

@@ -26,7 +26,7 @@ include 'FirstGermanconnect.php';
 <input type="text" name="address" placeholder="Please don't input Japanese." size="25" pattern="[a-zA-Z0-9,-\s]{20,100}" minlength="20" maxlength="100" title="Please input within 20 to 100 characters." required><br>
 <br>
 <span>TEL:</span>
-<input type="tel" id="phoneno" name="tel" placeholder="032-XXX-XXXX" size="25" maxlength="10" pattern="\d{3}-\d{3}-\d{4}" required><br><br>
+<input type="tel" id="phoneno" name="tel" placeholder="032-XXX-XXXX" size="25" pattern="\d{3}-\d{3}-\d{4}" required><br><br>
 <span>Password:</span>
 <input type="password" name="password" placeholder="password" size="25" pattern="[a-zA-Z0-9]{5,10}" title="Please input within 5 to 10 small characters." required><br><br>
 <input type="submit" name="register" value="Register" class="register">
