@@ -45,7 +45,7 @@ if(isset($_POST["complete"])){
 
 		if ($conn->query($order2) === TRUE) {
 
-	    echo "<span>Nuremberg sausage & tucher beer order were accepted</span>";
+	    echo "<span>Eisbein was accepted</span>";
 	    echo "<br>";
 
 		}else {
