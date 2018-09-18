@@ -74,9 +74,9 @@ input{
 button{
 	color:white;
 	background-color:#85E024;
-	font-size:25px;
+	font-size:20px;
 	font-family:"Courier";
-	height:40px;
+	height:60px;
 	border:2px black dotted;
 	margin-bottom:30px;
 }

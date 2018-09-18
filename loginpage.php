@@ -33,7 +33,7 @@ include 'FirstGermanconnect.php';
 <input type="password" name="password" size="25"><br required><br>
 <label><input type="radio" name="guest" value="admin" required>Admin</label><br>
 <label><input type="radio" name="guest" value="user" required=>User<label><br><br>
-<input type="submit" name="login" value="login" class="login"><br>
+<input type="submit" name="login" value="Login" class="login"><br>
 
 	
 <?php
@@ -96,7 +96,7 @@ if(isset($_POST["login"])){
 <br>
 </form>
 <form action="registeruser.php" method="POST">
-<button >To Registration</button>
+<button >To <br>Register Page</button>
 </form>
 </div>
 </body>
