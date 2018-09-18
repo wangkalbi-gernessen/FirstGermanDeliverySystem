@@ -32,7 +32,7 @@ if(isset($_POST["complete"])){
 
 		if ($conn->query($order1) === TRUE) {
 
-		echo "<span>Vienna schnitzel order was accepted</span>";
+		echo "<span>Vienna Schnitzel order was accepted</span>";
 		echo "<br>";
 
 		}else {
@@ -58,7 +58,7 @@ if(isset($_POST["complete"])){
 
 		if ($conn->query($order3) === TRUE) {
 
-	    echo "<span>Berlin currysausage order was accepted</span>";
+	    echo "<span>Berlin Currysausage order was accepted</span>";
 	    echo "<br>";
 
 		}else {
@@ -71,7 +71,7 @@ if(isset($_POST["complete"])){
 
 		if ($conn->query($order4) === TRUE) {
 
-	    echo "<span>Thuringen sausage order was accepted</span>";
+	    echo "<span>Thuringen Sausage order was accepted</span>";
 	    echo "<br>";
 	    
 		}else {
@@ -84,7 +84,7 @@ if(isset($_POST["complete"])){
 
 		if ($conn->query($order5) === TRUE) {
 
-	    echo "<span>Cologne beer order was accepted</span>";
+	    echo "<span>Cologne Beer order was accepted</span>";
 	    echo "<br>";
 	    
 		}else {
@@ -97,7 +97,7 @@ if(isset($_POST["complete"])){
 
 		if ($conn->query($order6) === TRUE) {
 
-	    echo "<span>Bamberg beer order was accepted</span>";
+	    echo "<span>Bamberg Beer order was accepted</span>";
 	    echo "<br>";
 	    
 		}else {
