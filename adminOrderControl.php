@@ -23,10 +23,10 @@ if($result->num_rows>0){
 	<form action="orderstatusinsert.php" method="POST">
 	<div class="select">
 	<select name="orderstatus" required=>
-	<option value="cookingtime">Cooking time</option>
-	<option value="finished">Cooking finished</option>
-	<option value="start">Start to deliver</option>
-	<option value="delivered">Delivered</option>
+	<option value="cookingtime">Beginning time of cooking</option>
+	<option value="finished">Finishing time of cooking</option>
+	<option value="start">Departure time of delivery</option>
+	<option value="delivered">Arrival time of delivery</option>
 	</select><br>
 	</div>
 	<div class="submit">

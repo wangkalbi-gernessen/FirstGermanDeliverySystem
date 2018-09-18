@@ -36,11 +36,11 @@ if(isset($_POST["status"])){
 <body>
 <h1>Order Status</h1>
 <div class="orderrecord">
-	<p>Cooking time:  <?php echo $start; ?></p>
+	<p>Beginning time of cooking:  <?php echo $start; ?></p>
 	<p></p>
-	<p>Cooking finished:  <?php  echo $finish; ?></p>
-	<p>Start to deliver:  <?php echo $deliver; ?></p>
-	<p>Delivered:  <?php echo $delivered; ?></p>
+	<p>Finishing time of cooking:  <?php  echo $finish; ?></p>
+	<p>Departure time of delivery:  <?php echo $deliver; ?></p>
+	<p>Arrival time of delivery:  <?php echo $delivered; ?></p>
 	<div class="kiste">
 	<button>
 	<a href="adminOrderRecordList.php">Back to Order List</a>
