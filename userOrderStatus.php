@@ -32,11 +32,10 @@ if($result->num_rows>0){
 <body>
 <h1>Order Status</h1>
 <div class="orderrecord">
-	<p>Beginning time of cooking:  <?php echo $start; ?></p>
-	<p></p>
-	<p>Finishing time of cooking:  <?php  echo $finish; ?></p>
-	<p>Departure time of delivery:  <?php echo $deliver; ?></p>
-	<p>Arrival time of delivery:  <?php echo $delivered; ?></p>
+	<p>Beginning time of cooking:  <?php echo "<span>".$start."</span>"; ?></p>
+	<p>Finishing time of cooking:  <?php  echo "<span>".$finish."</span>"; ?></p>
+	<p>Departure time of delivery:  <?php echo "<span>".$deliver."</span>"; ?></p>
+	<p>Arrival time of delivery:  <?php echo "<span>".$delivered."</span>"; ?></p>
 	<div class="kiste">
 	<button>
 	<a href="userOrderRecordList.php">Back to<br> Order List</a></button>
