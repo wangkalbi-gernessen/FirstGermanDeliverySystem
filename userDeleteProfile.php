@@ -75,7 +75,7 @@ if(isset($_POST["deletion"])){
 			echo "Please close this screen</p>";*/
 		}else{
 			
-			echo "<p class='error'>Your username or password is wrong.</p>".$conn->error;
+			/*echo "<p class='error'>Your username or password is wrong.</p>".$conn->error;*/
 		}
 
 	}else{
