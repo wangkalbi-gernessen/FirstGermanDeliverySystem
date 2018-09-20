@@ -30,11 +30,11 @@ body{
 	margin-top:20px;
 	background-color:white;
 	padding-left:50px;
-	height:1000px;
+	height:1070px;
 }
 
 .image{
-	margin-top:30px;
+	margin-top:15px;
 }
 
 .image-1{
@@ -57,11 +57,28 @@ span{
 	color:red;
 }
 
+.product{
+	margin-top:30px;
+}
+
+.price{
+	margin-top:30px;
+}
+
+.datetime{
+	margin-top:30px;
+}
+
+.name{
+	margin-top:30px;
+}
+
 .order{
 	text-align:center;
-	margin-bottom:30px;
+	margin-top:30px;
 	float:left;
 	width:50%;
+	margin-bottom:30px;
 }
 
 .order .bestellen{
@@ -76,8 +93,9 @@ span{
 .order1{
 	float:left;
 	text-align:center;
-	margin-bottom:30px;
 	width:50%;
+	margin-top:30px;
+	margin-bottom:30px;
 }
 
 .order1 .verstellen{

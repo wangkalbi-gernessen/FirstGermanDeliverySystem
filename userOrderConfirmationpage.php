@@ -140,7 +140,7 @@ $order=$_POST["order"];
 	</div>
 	<br>
 	<div class="product">
-	<h2>Product name:</h2>
+	<h2>Food name:</h2>
 
 	<form action="userOrderCompletion.php" method="POST">
 	<?php
@@ -215,7 +215,7 @@ $order=$_POST["order"];
 	?>
 	</div>
 	<div class="price">
-	<h2>Price:</h2>
+	<h2>Total price:</h2>
 	<?php	
 
 	if(isset($_POST["order"])){
@@ -247,7 +247,7 @@ $order=$_POST["order"];
 	?>
 	</div>
 	<div class="name">
-	<h2>Name:</h2>
+	<h2>Username:</h2>
 	<?php
 	$name=$_SESSION["username"];
 	echo $name;
