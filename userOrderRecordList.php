@@ -19,7 +19,7 @@ $result=$conn->query($sql);
 	<ul>
 	<li><a href="usermenupage.php" class="lions">Menu Page</a></li>
 	<li><a href="userEditProfile.php"  class="hawks">Edit Profile</li>
-	<li><a href="userOrderRecordList.php"  class="dragons">Order Record List</a></li>
+	<li><a href="userDeleteProfile.php"  class="dragons">Delete Profile</a></li>
 	<li><a href="logoutpage.php" onclick="return confirm('Will you log out?');"  class="carp">Logout</a></li>
 	</ul>
 </header>
